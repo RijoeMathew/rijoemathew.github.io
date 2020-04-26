@@ -1,24 +1,63 @@
-<!--This is my first html webpage-->
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-
-<!--head element-->
 <head>
-	<title>
-	This is crazy!&#129321;
-	</title>
+    <title>Input Elements</title>
 </head>
 
-<!--body element-->
-<body>
-Hello World
-<br/>
-This is Rijoe
-	<form>
-	User Name <input>
-	<br/>
-	Password <input>
-	</form>  
+<body bgcolor="black"
+    style="color: whitesmoke;background-image: url(https://cdn.hipwallpaper.com/i/64/46/WGYHqF.jpg); background-size: 1500px;">
+    <p>
+        Application for Drivers licence
+    </p>
+    <br>
+    <form method="GET">
+        <div>
+            Name: <input name="name" type="text" required="required" pattern="[A-Za-z\s]+">
+        </div><br />
+
+        <div>
+            Age: <input name="age" type="text" required="required" pattern="[0-9]+">
+        </div><br />
+
+        <div>
+            <label for="address">Address: </label>
+            <textarea name="address" id="address" cols="15" rows="2" maxlength="30" required></textarea>
+        </div><br />
+
+        <div>
+            Contact No: <input name="contact" type="text" pattern="[0-9]+" minlength="10" maxlength="10">
+        </div><br />
+
+        <div>
+            Date of Birth: <input name="dob" type="date" required>
+        </div><br />
+
+        <div>
+            <label for="gender">Gender: </label>
+            Male<input name="gender" type="radio" value="male" required>&nbsp;
+            Female<input name="gender" type="radio" value="female" required>&nbsp;
+            Other<input name="gender" type="radio" value="other" required>
+        </div><br />
+
+        <div>
+            PAN: <input name="pan" type="text" required pattern="[A-Za-z0-9]+" maxlength="10">
+        </div><br />
+
+        <div>
+            LL No: <input name="ll_no" type="text" required pattern="[A-Za-z0-9]+" maxlength="12">
+        </div><br />
+
+        <div>
+            <input name="checkbox" type="checkbox"> I own an expired driver's license.
+        </div>
+
+        <div>
+            <button name="submit" type="submit">Submit</button>
+        </div>
+
+
+    </form>
 </body>
 
 </html>
