@@ -1,63 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
-    <title>Input Elements</title>
+    <title>Dine Booking</title>
 </head>
 
-<body bgcolor="black"
-    style="color: whitesmoke;background-image: url(https://cdn.hipwallpaper.com/i/64/46/WGYHqF.jpg); background-size: 1500px;">
-    <p>
-        Application for Drivers licence
-    </p>
-    <br>
-    <form method="GET">
-        <div>
-            Name: <input name="name" type="text" required="required" pattern="[A-Za-z\s]+">
-        </div><br />
+<body style="background-image: url(https://www.absolutehotel.com/upload/slide_images/bar_grill9.jpg); color: white;">
+    <h1 style="text-align: center;">Dine Booking</h1>
+    <center>
+        <form name="booking">
+            <table cellspacing="20">
+                <div>
+                    <tr>
+                        <td>
+                            <label for="visitor_name">Visitor Name:</label>
+                        </td>
+                        <td>
+                            <input name="visitor_name" type="text" autofocus maxlength="20" required>
+                        </td>
+                    </tr>
+                </div>
 
-        <div>
-            Age: <input name="age" type="text" required="required" pattern="[0-9]+">
-        </div><br />
+                <div>
+                    <tr>
+                        <td>
+                            <label for="members">Number of members:</label>
+                        </td>
+                        <td>
+                            <input name="members" type="number" min="0" max="99" required>
+                        </td>
+                    </tr>
 
-        <div>
-            <label for="address">Address: </label>
-            <textarea name="address" id="address" cols="15" rows="2" maxlength="30" required></textarea>
-        </div><br />
+                </div>
+                <div>
+                    <tr>
+                        <td>
+                            <label for="contact">Contact No:</label>
+                        </td>
 
-        <div>
-            Contact No: <input name="contact" type="text" pattern="[0-9]+" minlength="10" maxlength="10">
-        </div><br />
+                        <td>
+                            <input name="contact" type="number" max="9999999999" required>
+                        </td>
+                    </tr>
+                </div>
 
-        <div>
-            Date of Birth: <input name="dob" type="date" required>
-        </div><br />
+                <div>
+                    <tr>
+                        <td>
+                            <label for="email">Email:</label>
+                        </td>
 
-        <div>
-            <label for="gender">Gender: </label>
-            Male<input name="gender" type="radio" value="male" required>&nbsp;
-            Female<input name="gender" type="radio" value="female" required>&nbsp;
-            Other<input name="gender" type="radio" value="other" required>
-        </div><br />
+                        <td>
+                            <input name="email" type="email" required>
+                        </td>
+                    </tr>
+                </div>
 
-        <div>
-            PAN: <input name="pan" type="text" required pattern="[A-Za-z0-9]+" maxlength="10">
-        </div><br />
+                <div>
+                    <tr>
+                        <td>
+                            <label for="food_type">Type of Food:</label>
+                        </td>
+                        <td>
+                            <input name="food_type" type="checkbox" value="south indian" checked>South Indian
+                            <input name="food_type" type="checkbox" value="north indian">North Indian
+                            <input name="food_type" type="checkbox" value="chinese">Chinese
+                            <input name="food_type" type="checkbox" value="western">Western
+                        </td>
+                    </tr>
+                </div>
 
-        <div>
-            LL No: <input name="ll_no" type="text" required pattern="[A-Za-z0-9]+" maxlength="12">
-        </div><br />
+                <div>
+                    <tr>
+                        <td>
+                            <label for="room_status">Room Status:</label>
+                        </td>
+                        <td>
+                            <input name="room_status" type="radio" value="AC" checked>AC
+                            <input name="room_status" type="radio" value="Non-AC">Non-AC
+                        </td>
+                    </tr>
+                </div>
 
-        <div>
-            <input name="checkbox" type="checkbox"> I own an expired driver's license.
-        </div>
+                <div>
+                    <tr>
+                        <td>
+                            <label for="venue">Venue Preference:</label>
+                        </td>
+                        <td>
+                            <select name="venue" id="venue" required>
+                                <option value="">--SELECT--</option>
+                                <option value="arena">Arena</option>
+                                <option value="fiesta">Fiesta</option>
+                                <option value="vista">Vista</option>
+                                <option value="mythri">Mythri</option>
+                                <option value="magna">Magna</option>
+                                <option value="oasis">Oasis</option>
+                                <option value="" disabled>Amoeba</option>
+                            </select>
+                        </td>
+                    </tr>
+                </div>
 
-        <div>
-            <button name="submit" type="submit">Submit</button>
-        </div>
+                <div>
+                    <tr>
+                        <td>
+                            <button name="book" type="submit">Book</button>
+                        </td>
+                        <td>
+                            <button name="reset" type="reset">Reset</button>
+                        </td>
+                    </tr>
+                </div>
+            </table>
+        </form>
 
-
-    </form>
+    </center>
 </body>
 
 </html>
