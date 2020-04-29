@@ -8,166 +8,182 @@
 </head>
 
 <body style="background-image: url(/assets/background.jpg); color: white; background-repeat: no-repeat;">
-    <h1 style="text-align: center;">Dine Booking</h1>
-    <center>
-        <form name="booking" action="success.html">
-            <i>
+    <header style="background-image: url(assets/footer1.jpg);">
+        <h1 style="text-align: center;">Dine Booking</h1>
+    </header>
+
+    <section>
+        <article>
+
+
+            <center>
+                <form name="booking" action="success.html">
+                    <i>
+                        <table cellspacing="20">
+                            <div>
+                                <tr>
+                                    <td>
+                                        <label for="visitor_name">Visitor Name:</label>
+                                    </td>
+                                    <td>
+                                        <input name="visitor_name" type="text" autofocus maxlength="20" required>
+                                    </td>
+                                </tr>
+                            </div>
+
+                            <div>
+                                <tr>
+                                    <td>
+                                        <label for="members">Number of members:</label>
+                                    </td>
+                                    <td>
+                                        <input name="members" type="number" min="0" max="99" required>
+                                    </td>
+                                </tr>
+
+                            </div>
+                            <div>
+                                <tr>
+                                    <td>
+                                        <label for="contact">Contact No:</label>
+                                    </td>
+
+                                    <td>
+                                        <input name="contact" type="number" max="9999999999" required>
+                                    </td>
+                                </tr>
+                            </div>
+
+                            <div>
+                                <tr>
+                                    <td>
+                                        <label for="email">Email:</label>
+                                    </td>
+
+                                    <td>
+                                        <input name="email" type="email" required>
+                                    </td>
+                                </tr>
+                            </div>
+
+                            <div>
+                                <tr>
+                                    <td>
+                                        <label for="food_type">Type of Food:</label>
+                                    </td>
+                                    <td>
+                                        <input name="food_type" type="checkbox" value="south indian" checked>South
+                                        Indian
+                                        <input name="food_type" type="checkbox" value="north indian">North Indian
+                                        <input name="food_type" type="checkbox" value="chinese">Chinese
+                                        <input name="food_type" type="checkbox" value="western">Western
+                                    </td>
+                                </tr>
+                            </div>
+
+                            <div>
+                                <tr>
+                                    <td>
+                                        <label for="room_status">Room Status:</label>
+                                    </td>
+                                    <td>
+                                        <input name="room_status" type="radio" value="AC" checked>AC
+                                        <input name="room_status" type="radio" value="Non-AC">Non-AC
+                                    </td>
+                                </tr>
+                            </div>
+
+                            <div>
+                                <tr>
+                                    <td>
+                                        <label for="venue">Venue Preference:</label>
+                                    </td>
+                                    <td>
+                                        <select name="venue" id="venue" required>
+                                            <option value="">--SELECT--</option>
+                                            <option value="arena">Arena</option>
+                                            <option value="fiesta">Fiesta</option>
+                                            <option value="vista">Vista</option>
+                                            <option value="mythri">Mythri</option>
+                                            <option value="magna">Magna</option>
+                                            <option value="oasis">Oasis</option>
+                                            <option value="" disabled>Amoeba</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </div>
+
+                            <div>
+                                <tr>
+                                    <td>
+                                        <button name="book" type="submit">Book</button>
+                                    </td>
+                                    <td>
+                                        <button name="reset" type="reset">Reset</button>
+                                    </td>
+                                </tr>
+                            </div>
+                        </table>
+                    </i>
+                </form>
+            </center>
+        </article>
+    </section>
+
+    <hr>
+
+    <section>
+        <article>
+            <ul type="disc">
+                <li>
+                    After finding a perfect blend of modernity and then blending with tradition, Bangalore has managed
+                    to rise up the ranks from merely being a garden city to become one of the most sought-after cities
+                    in the world.
+                </li>
+                <li>
+                    Some of these best restaurants in Bangalore are a testament to the changing times in Karnataka’s
+                    capital
+                    which has evolved into a rich and diverse food paradise for travelers and locals alike.
+                </li>
+            </ul>
+        </article>
+
+        <hr>
+
+
+        <article>
+            <center>
                 <table cellspacing="20">
-                    <div>
-                        <tr>
-                            <td>
-                                <label for="visitor_name">Visitor Name:</label>
-                            </td>
-                            <td>
-                                <input name="visitor_name" type="text" autofocus maxlength="20" required>
-                            </td>
-                        </tr>
-                    </div>
+                    <tr>
+                        <td>
+                            <img src="assets/img1.jpg" alt="img1" width="300" height="150">
+                        </td>
+                        <td>
+                            <img src="assets/img2.jpg" alt="img2" width="300" height="150">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="assets/img3.jpg" alt="img3" width="300" height="150">
+                        </td>
 
-                    <div>
-                        <tr>
-                            <td>
-                                <label for="members">Number of members:</label>
-                            </td>
-                            <td>
-                                <input name="members" type="number" min="0" max="99" required>
-                            </td>
-                        </tr>
+                        <td>
+                            <img src="assets/img4.jpg" alt="img4" width="300" height="150">
+                        </td>
+                    </tr>
 
-                    </div>
-                    <div>
-                        <tr>
-                            <td>
-                                <label for="contact">Contact No:</label>
-                            </td>
-
-                            <td>
-                                <input name="contact" type="number" max="9999999999" required>
-                            </td>
-                        </tr>
-                    </div>
-
-                    <div>
-                        <tr>
-                            <td>
-                                <label for="email">Email:</label>
-                            </td>
-
-                            <td>
-                                <input name="email" type="email" required>
-                            </td>
-                        </tr>
-                    </div>
-
-                    <div>
-                        <tr>
-                            <td>
-                                <label for="food_type">Type of Food:</label>
-                            </td>
-                            <td>
-                                <input name="food_type" type="checkbox" value="south indian" checked>South Indian
-                                <input name="food_type" type="checkbox" value="north indian">North Indian
-                                <input name="food_type" type="checkbox" value="chinese">Chinese
-                                <input name="food_type" type="checkbox" value="western">Western
-                            </td>
-                        </tr>
-                    </div>
-
-                    <div>
-                        <tr>
-                            <td>
-                                <label for="room_status">Room Status:</label>
-                            </td>
-                            <td>
-                                <input name="room_status" type="radio" value="AC" checked>AC
-                                <input name="room_status" type="radio" value="Non-AC">Non-AC
-                            </td>
-                        </tr>
-                    </div>
-
-                    <div>
-                        <tr>
-                            <td>
-                                <label for="venue">Venue Preference:</label>
-                            </td>
-                            <td>
-                                <select name="venue" id="venue" required>
-                                    <option value="">--SELECT--</option>
-                                    <option value="arena">Arena</option>
-                                    <option value="fiesta">Fiesta</option>
-                                    <option value="vista">Vista</option>
-                                    <option value="mythri">Mythri</option>
-                                    <option value="magna">Magna</option>
-                                    <option value="oasis">Oasis</option>
-                                    <option value="" disabled>Amoeba</option>
-                                </select>
-                            </td>
-                        </tr>
-                    </div>
-
-                    <div>
-                        <tr>
-                            <td>
-                                <button name="book" type="submit">Book</button>
-                            </td>
-                            <td>
-                                <button name="reset" type="reset">Reset</button>
-                            </td>
-                        </tr>
-                    </div>
                 </table>
-            </i>
-        </form>
-    </center>
 
-    <div>
-        <ul type="disc">
-            <li>
-                After finding a perfect blend of modernity and then blending with tradition, Bangalore has managed
-                to rise up the ranks from merely being a garden city to become one of the most sought-after cities
-                in the world.
-            </li>
-            <li>
-                Some of these best restaurants in Bangalore are a testament to the changing times in Karnataka’s capital
-                which has evolved into a rich and diverse food paradise for travelers and locals alike.
-            </li>
-        </ul>
-    </div>
+                <video src="assets/Fine Dining.mp4" width="480" height="240" loop controls
+                    controlsList="nodownload"></video>
+                <br><br>
+            </center>
+        </article>
+    </section>
 
+    <hr>
 
-    <center>
-
-        <table cellspacing="20">
-            <tr>
-                <td>
-                    <img src="assets/img1.jpg" alt="img1" width="300" height="150">
-                </td>
-                <td>
-                    <img src="assets/img2.jpg" alt="img2" width="300" height="150">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="assets/img3.jpg" alt="img3" width="300" height="150">
-                </td>
-
-                <td>
-                    <img src="assets/img4.jpg" alt="img4" width="300" height="150">
-                </td>
-            </tr>
-
-        </table>
-
-        <video src="assets/Fine Dining.mp4" width="480" height="240" loop controls controlsList="nodownload"></video>
-        <br><br>
-
-        <a href="https://www.google.com/search?sxsrf=ALeKk03gDNUfo5t89oK-IWu_MjYBCUAlnw%3A1588082038555&source=hp&ei=djWoXo6vH9rgrQHIoYeoAQ&q=rijoe+mathew+designs&oq=Rijoe+&gs_lcp=CgZwc3ktYWIQAxgAMgQIIxAnMgQIIxAnOgUIABCRAjoCCAA6BQgAEIMBOgQIABBDOgYIABAKEEM6BAgAEApQoAlY7xBglR1oAXAAeACAAacBiAGJB5IBAzAuNpgBAKABAaoBB2d3cy13aXo&sclient=psy-ab"
-            target="_blank" style="color: white;"><img src="assets/google.png" alt="Google Us" width="25"
-                height="25"></a>
-
-    </center>
-
-    <div>
+    <aside>
         <h2>Some crazy words 💡</h2>
         <dl>
             <dt>
@@ -183,7 +199,8 @@
             </dt>
             <dd>
                 <i>
-                    This is a term that you will find in the Midland and Southern United States. It is referring to
+                    This is a term that you will find in the Midland and Southern <abbr title="United States">US</abbr>.
+                    It is referring to
                     something
                     that is in disarray, that is askew, or something that isn’t directly across from something.
                 </i>
@@ -202,7 +219,15 @@
             </dd>
 
         </dl>
-    </div>
+    </aside>
+
+    <footer style="background-image: url(assets/footer2.jpg);">
+        <center>
+            <a href="https://www.google.com/search?sxsrf=ALeKk03gDNUfo5t89oK-IWu_MjYBCUAlnw%3A1588082038555&source=hp&ei=djWoXo6vH9rgrQHIoYeoAQ&q=rijoe+mathew+designs&oq=Rijoe+&gs_lcp=CgZwc3ktYWIQAxgAMgQIIxAnMgQIIxAnOgUIABCRAjoCCAA6BQgAEIMBOgQIABBDOgYIABAKEEM6BAgAEApQoAlY7xBglR1oAXAAeACAAacBiAGJB5IBAzAuNpgBAKABAaoBB2d3cy13aXo&sclient=psy-ab"
+                target="_blank" style="color: white;"><img src="assets/google.png" alt="Google Us" width="25"
+                    height="25"></a>
+        </center>
+    </footer>
 
 </body>
 
