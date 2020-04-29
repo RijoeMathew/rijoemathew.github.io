@@ -11,110 +11,112 @@
     <h1 style="text-align: center;">Dine Booking</h1>
     <center>
         <form name="booking" action="success.html">
-            <table cellspacing="20">
-                <div>
-                    <tr>
-                        <td>
-                            <label for="visitor_name">Visitor Name:</label>
-                        </td>
-                        <td>
-                            <input name="visitor_name" type="text" autofocus maxlength="20" required>
-                        </td>
-                    </tr>
-                </div>
+            <i>
+                <table cellspacing="20">
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="visitor_name">Visitor Name:</label>
+                            </td>
+                            <td>
+                                <input name="visitor_name" type="text" autofocus maxlength="20" required>
+                            </td>
+                        </tr>
+                    </div>
 
-                <div>
-                    <tr>
-                        <td>
-                            <label for="members">Number of members:</label>
-                        </td>
-                        <td>
-                            <input name="members" type="number" min="0" max="99" required>
-                        </td>
-                    </tr>
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="members">Number of members:</label>
+                            </td>
+                            <td>
+                                <input name="members" type="number" min="0" max="99" required>
+                            </td>
+                        </tr>
 
-                </div>
-                <div>
-                    <tr>
-                        <td>
-                            <label for="contact">Contact No:</label>
-                        </td>
+                    </div>
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="contact">Contact No:</label>
+                            </td>
 
-                        <td>
-                            <input name="contact" type="number" max="9999999999" required>
-                        </td>
-                    </tr>
-                </div>
+                            <td>
+                                <input name="contact" type="number" max="9999999999" required>
+                            </td>
+                        </tr>
+                    </div>
 
-                <div>
-                    <tr>
-                        <td>
-                            <label for="email">Email:</label>
-                        </td>
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="email">Email:</label>
+                            </td>
 
-                        <td>
-                            <input name="email" type="email" required>
-                        </td>
-                    </tr>
-                </div>
+                            <td>
+                                <input name="email" type="email" required>
+                            </td>
+                        </tr>
+                    </div>
 
-                <div>
-                    <tr>
-                        <td>
-                            <label for="food_type">Type of Food:</label>
-                        </td>
-                        <td>
-                            <input name="food_type" type="checkbox" value="south indian" checked>South Indian
-                            <input name="food_type" type="checkbox" value="north indian">North Indian
-                            <input name="food_type" type="checkbox" value="chinese">Chinese
-                            <input name="food_type" type="checkbox" value="western">Western
-                        </td>
-                    </tr>
-                </div>
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="food_type">Type of Food:</label>
+                            </td>
+                            <td>
+                                <input name="food_type" type="checkbox" value="south indian" checked>South Indian
+                                <input name="food_type" type="checkbox" value="north indian">North Indian
+                                <input name="food_type" type="checkbox" value="chinese">Chinese
+                                <input name="food_type" type="checkbox" value="western">Western
+                            </td>
+                        </tr>
+                    </div>
 
-                <div>
-                    <tr>
-                        <td>
-                            <label for="room_status">Room Status:</label>
-                        </td>
-                        <td>
-                            <input name="room_status" type="radio" value="AC" checked>AC
-                            <input name="room_status" type="radio" value="Non-AC">Non-AC
-                        </td>
-                    </tr>
-                </div>
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="room_status">Room Status:</label>
+                            </td>
+                            <td>
+                                <input name="room_status" type="radio" value="AC" checked>AC
+                                <input name="room_status" type="radio" value="Non-AC">Non-AC
+                            </td>
+                        </tr>
+                    </div>
 
-                <div>
-                    <tr>
-                        <td>
-                            <label for="venue">Venue Preference:</label>
-                        </td>
-                        <td>
-                            <select name="venue" id="venue" required>
-                                <option value="">--SELECT--</option>
-                                <option value="arena">Arena</option>
-                                <option value="fiesta">Fiesta</option>
-                                <option value="vista">Vista</option>
-                                <option value="mythri">Mythri</option>
-                                <option value="magna">Magna</option>
-                                <option value="oasis">Oasis</option>
-                                <option value="" disabled>Amoeba</option>
-                            </select>
-                        </td>
-                    </tr>
-                </div>
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="venue">Venue Preference:</label>
+                            </td>
+                            <td>
+                                <select name="venue" id="venue" required>
+                                    <option value="">--SELECT--</option>
+                                    <option value="arena">Arena</option>
+                                    <option value="fiesta">Fiesta</option>
+                                    <option value="vista">Vista</option>
+                                    <option value="mythri">Mythri</option>
+                                    <option value="magna">Magna</option>
+                                    <option value="oasis">Oasis</option>
+                                    <option value="" disabled>Amoeba</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </div>
 
-                <div>
-                    <tr>
-                        <td>
-                            <button name="book" type="submit">Book</button>
-                        </td>
-                        <td>
-                            <button name="reset" type="reset">Reset</button>
-                        </td>
-                    </tr>
-                </div>
-            </table>
+                    <div>
+                        <tr>
+                            <td>
+                                <button name="book" type="submit">Book</button>
+                            </td>
+                            <td>
+                                <button name="reset" type="reset">Reset</button>
+                            </td>
+                        </tr>
+                    </div>
+                </table>
+            </i>
         </form>
 
 
