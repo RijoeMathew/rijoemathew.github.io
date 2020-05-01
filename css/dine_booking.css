@@ -1,0 +1,173 @@
+input[type="email"]{
+    background-color: rgb(255, 212, 174);
+}
+
+header{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
+    transition: 0.3s;
+    background-color: rgba(141, 7, 7, 0.856);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    position:fixed;
+    font-weight: bold;
+    padding: 12px 0px 10px 0px;
+    z-index: 1;
+    margin-top: -8px; 
+    margin-left: -8px;  
+    margin-right: -8px;  
+}
+
+main{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 10px;
+    color: black;
+    width: 28%;
+    height: 515px;
+    padding: 20px 40px;
+    text-align: left;
+    position: relative;
+    top: 170px;
+    left: 53px;
+    font-weight: bold;
+   }
+
+
+#First{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 10px;
+    color: black;
+    width: 50%;
+    padding: 20px 40px;
+    text-align: left;
+    position: relative;
+    left: 40%;
+    top:-420px;
+    font-weight: bold;
+   }
+
+#Second{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 10px;
+    color: black;
+    width: 50%;
+    padding: 20px 40px;
+    text-align: left;
+    top:-440px;
+    position: relative;
+    left: 40%;
+    font-weight: bold;
+   }
+
+   #Third{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 10px;
+    color: black;
+    width: 50%;
+    padding: 20px 40px;
+    text-align: left;
+    top:-460px;
+    position: relative;
+    left: 40%;
+    font-weight: bold;
+   }
+
+
+   #Images{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 10px;
+    color: black;
+    width: 50%;
+    padding: 40px 40px;
+    text-align: left;
+    position: relative;
+    left: 4%;
+    top:-480px;
+    font-weight: bold;
+   }
+
+   #video{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 10px;
+    color: black;
+    width: 40%;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    left: 4%;
+    top:-460px;
+    font-weight: bold;
+   }
+
+   h2{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 10px;
+    color: black;
+    width: 28%;
+    padding: 20px 40px;
+    text-align: center;
+    position: relative;
+    left: 62%;
+    bottom: 1508px;
+    font-weight: bold;
+    
+   }
+
+   #Others{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 10px;
+    color: black;
+    width: 28%;
+    padding: 29px 40px;
+    text-align: left;
+    position: relative;
+    left: 62%;
+    bottom: 1508px;
+    font-weight: bold;
+    
+   }
+
+   #gif{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 10px;
+    color: black;
+    width: 30%;
+    padding: 40px 15px;
+    text-align: center;
+    position: relative;
+    left: 49%;
+    top:-780px;
+    font-weight: bold;
+   }
+
+   footer{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
+    transition: 0.3s;
+    background-color: rgba(141, 7, 7, 0.856);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0px 10px 0px;
+    margin: 0;
+   }
