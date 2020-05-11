@@ -3,17 +3,17 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width,initial_scale=1" />
+    <meta name="viewport" content="width=device-width,initial_scale=1">
     <title>Dine Booking</title>
     <link rel="stylesheet" href="css/dine_booking.css">
 </head>
 
-<body style="background-image: url(/assets/background.jpg); color: white; background-repeat: repeat-y;">
+<body bgcolor="black" class="outer">
     <header>Dine Booking</header>
 
     <main>
         <center>
-            <form name="booking" action="success.html">
+            <form name="booking" action="success.html" id="form_elements">
                 <i>
                     <table cellspacing="20">
                         <div>
@@ -22,7 +22,8 @@
                                     <label for="visitor_name">Visitor Name:</label>
                                 </td>
                                 <td>
-                                    <input name="visitor_name" type="text" autofocus maxlength="20" required>
+                                    <input class="Inputs" name="visitor_name" type="text" autofocus maxlength="20"
+                                        required>
                                 </td>
                             </tr>
                         </div>
@@ -33,7 +34,7 @@
                                     <label for="members">Number of members:</label>
                                 </td>
                                 <td>
-                                    <input name="members" type="number" min="0" max="99" required>
+                                    <input class="Inputs" name="members" type="number" min="0" max="99" required>
                                 </td>
                             </tr>
 
@@ -45,7 +46,7 @@
                                 </td>
 
                                 <td>
-                                    <input name="contact" type="number" max="9999999999" required>
+                                    <input class="Inputs" name="contact" type="number" max="9999999999" required>
                                 </td>
                             </tr>
                         </div>
@@ -57,7 +58,7 @@
                                 </td>
 
                                 <td>
-                                    <input name="email" type="email" required>
+                                    <input class="Inputs" name="email" type="email" required>
                                 </td>
                             </tr>
                         </div>
@@ -67,7 +68,7 @@
                                 <td>
                                     <label for="food_type">Type of Food:</label>
                                 </td>
-                                <td>
+                                <td><span class="checkbox"></span>
                                     <input name="food_type" type="checkbox" value="south indian" checked>South
                                     Indian
                                     <input name="food_type" type="checkbox" value="north indian">North Indian
