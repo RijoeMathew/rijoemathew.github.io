@@ -70,6 +70,10 @@ button[type=submit]:hover {
   resize: vertical;
 }
 
+.Inputs,#venue:focus{
+  outline: none;
+}
+
 
 #venue{
   width: 100%;
