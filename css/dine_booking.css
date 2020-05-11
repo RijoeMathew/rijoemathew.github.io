@@ -1,173 +1,194 @@
+
+
+body{
+  background-color: rgb(51, 6, 158);
+  margin:0;
+}
+
 input[type="email"]{
-    background-color: rgb(255, 212, 174);
+    background-color: rgb(156, 154, 231);
 }
 
 header{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
-    transition: 0.3s;
-    background-color: rgba(141, 7, 7, 0.856);
+    background-color: rgba(0, 0, 0, 0.774);
     color: rgb(255, 255, 255);
     font-size: 30px;
     text-align: center;
     width: 100%;
-    height: 40px;
     position:fixed;
     font-weight: bold;
-    padding: 12px 0px 10px 0px;
+    padding: 10px 10px 10px 10px;
     z-index: 1;
-    margin-top: -8px; 
-    margin-left: -8px;  
-    margin-right: -8px;  
 }
 
 main{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
-    transition: 0.3s;
-    background-color: rgba(255, 255, 255, 0.774);
-    border-radius: 10px;
-    color: black;
-    width: 28%;
-    height: 515px;
-    padding: 20px 40px;
-    text-align: left;
-    position: relative;
-    top: 170px;
-    left: 53px;
+    color: rgb(255, 255, 255);
+    width: 100%;
     font-weight: bold;
+    resize: vertical;
+    position: static;
+    padding-top: 70px;
    }
+
+   button[type="submit"]{
+       color: white;
+       background-color: green;
+       padding: 12px 20px;
+       border: 0px;
+       border-radius: 4px;
+       cursor: pointer;
+       float: right;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685  );
+    transition: 0.5s;
+   }
+
+   button[type="reset"]{
+    color: white;
+    background-color:rgb(46, 46, 46);
+    padding: 12px 20px;
+    border: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685);
+    transition: 0.5s;
+}
+
+button[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  button[type=reset]:hover {
+    background-color: #555454;
+  }
+
+.Inputs{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  resize: vertical;
+}
+
+
+#venue{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  resize: vertical;
+}
+
+input[type="checkbox"]{
+  cursor: pointer;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .main{
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
 
 
 #First{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
-    transition: 0.3s;
-    background-color: rgba(255, 255, 255, 0.774);
+    
     border-radius: 10px;
-    color: black;
-    width: 50%;
-    padding: 20px 40px;
+    color: rgb(255, 255, 255);
+    width: 100%;
     text-align: left;
-    position: relative;
-    left: 40%;
-    top:-420px;
-    font-weight: bold;
+    position: static;
+    font-style: italic;
    }
 
 #Second{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
-    transition: 0.3s;
-    background-color: rgba(255, 255, 255, 0.774);
+    
     border-radius: 10px;
-    color: black;
-    width: 50%;
-    padding: 20px 40px;
+    color: rgb(255, 255, 255);
+    width: 100%;
     text-align: left;
-    top:-440px;
-    position: relative;
-    left: 40%;
-    font-weight: bold;
+    position: static;
+    font-style: italic;
    }
 
    #Third{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
-    transition: 0.3s;
-    background-color: rgba(255, 255, 255, 0.774);
     border-radius: 10px;
-    color: black;
-    width: 50%;
-    padding: 20px 40px;
+    color: rgb(255, 255, 255);
+    width: 100%;
     text-align: left;
-    top:-460px;
-    position: relative;
-    left: 40%;
-    font-weight: bold;
-   }
+    position: static;
+    font-style: italic;
+    }
 
 
    #Images{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
-    transition: 0.3s;
-    background-color: rgba(255, 255, 255, 0.774);
     border-radius: 10px;
-    color: black;
-    width: 50%;
-    padding: 40px 40px;
+    color: rgb(255, 255, 255);
+    width: 100%;
     text-align: left;
-    position: relative;
-    left: 4%;
-    top:-480px;
+    position: static;
     font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
    }
 
    #video{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
-    transition: 0.3s;
-    background-color: rgba(255, 255, 255, 0.774);
     border-radius: 10px;
-    color: black;
-    width: 40%;
-    padding: 40px 20px;
+    color: rgb(255, 255, 255);
+    width: 100%;
     text-align: center;
-    position: relative;
-    left: 4%;
-    top:-460px;
+    position: static;
     font-weight: bold;
-   }
-
-   h2{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
-    transition: 0.3s;
-    background-color: rgba(255, 255, 255, 0.774);
-    border-radius: 10px;
-    color: black;
-    width: 28%;
-    padding: 20px 40px;
-    text-align: center;
-    position: relative;
-    left: 62%;
-    bottom: 1508px;
-    font-weight: bold;
-    
-   }
-
-   #Others{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
-    transition: 0.3s;
-    background-color: rgba(255, 255, 255, 0.774);
-    border-radius: 10px;
-    color: black;
-    width: 28%;
-    padding: 29px 40px;
-    text-align: left;
-    position: relative;
-    left: 62%;
-    bottom: 1508px;
-    font-weight: bold;
-    
+    padding-top: 20px;
+    padding-bottom: 20px;
    }
 
    #gif{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
-    transition: 0.3s;
-    background-color: rgba(255, 255, 255, 0.774);
     border-radius: 10px;
-    color: black;
-    width: 30%;
-    padding: 40px 15px;
+    color: rgb(255, 255, 255);
+    width: 100%;
     text-align: center;
-    position: relative;
-    left: 49%;
-    top:-780px;
+    position: static;
     font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
    }
 
+
+   h2{
+    
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: left;
+    position: static;
+    font-weight: bold;
+    padding-left: 30px;
+   }
+
+   #Others{
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: left;
+    position: static;
+    font-weight: bold;
+    padding-bottom: 50px;
+    padding-left: 30px;
+   }
+
+   
    footer{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
-    transition: 0.3s;
-    background-color: rgba(141, 7, 7, 0.856);
+    background-color: rgba(0, 0, 0, 0.774);
     color: rgb(255, 255, 255);
     font-size: 30px;
     text-align: center;
+    width: 100%;
     font-weight: bold;
-    padding: 10px 0px 10px 0px;
-    margin: 0;
+    padding: 10px 10px 10px 10px;
+    position: sticky;
    }
