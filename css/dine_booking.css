@@ -19,13 +19,11 @@ input[type="email"]:valid{
 input[name="contact"]:out-of-range{
   transition: 1s;
   background-color: rgb(235, 39, 39);
-  box-shadow: 0 0px 8px 0 rgba(255, 154, 154, 0.856);
 }
 
 input[name="members"]:out-of-range{
   transition: 1s;
   background-color: rgb(235, 39, 39);
-  box-shadow: 0 0px 8px 0 rgba(255, 154, 154, 0.856);
 }
 
 
@@ -83,6 +81,7 @@ button[type=submit]:hover {
   }
 
 .Inputs{
+  transition: 1s;
   width: 100%;
   padding: 12px;
   border: 1px solid rgb(255, 255, 255);
@@ -95,9 +94,8 @@ button[type=submit]:hover {
 }
 
 
-
-
 #venue{
+  transition: 1s;
   width: 100%;
   padding: 12px;
   border: 1px solid rgb(255, 255, 255);
@@ -218,3 +216,5 @@ input[type="checkbox"]{
     padding: 10px 10px 10px 10px;
     position: sticky;
    }
+
+   
