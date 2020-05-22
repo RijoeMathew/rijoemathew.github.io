@@ -3,6 +3,11 @@
 body{
   background-color: rgb(51, 6, 158);
   margin: 0px;
+  animation: animation1;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: alternate;
+  
 }
 
 input[type="email"]{
@@ -26,6 +31,14 @@ input[name="members"]:out-of-range{
   background-color: rgb(235, 39, 39);
 }
 
+@keyframes animation1{
+  0% { background-color: rgba(255, 0, 0, 0.774); }
+  25% { background-color: rgba(255, 255, 0, 0.774); }
+  50%  { background-color: rgba(0, 0, 255, 0.774); }
+  100% { background-color: rgba(0, 128, 0, 0.774); }
+}
+
+
 
 header{
     background-color: rgba(0, 0, 0, 0.774);
@@ -38,6 +51,7 @@ header{
     padding: 15px 10px 15px 10px;
     z-index: 1;
     margin-bottom: 5px;
+    
 }
 
 main{
