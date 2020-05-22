@@ -149,7 +149,9 @@ img[alt="img1"]:hover{
      transform: scale(1.5);
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685  );
      transition: 0.5s;
-        }    
+        }  
+
+     
    
    img[alt="img2"]:hover{
     transform: scale(1.5);
@@ -167,7 +169,21 @@ img[alt="img1"]:hover{
     transform: scale(1.5);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685  );
     transition: 0.5s;
-  }    
+  }   
+  
+  
+  img[alt="img1"]{
+    transition:0.3s
+  }
+  img[alt="img2"]{
+    transition:0.3s
+  }
+  img[alt="img3"]{
+    transition:0.3s
+  }
+  img[alt="img4"]{
+    transition:0.3s
+  }
 
    #video{
     border-radius: 10px;
