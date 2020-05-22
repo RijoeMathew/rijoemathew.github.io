@@ -137,16 +137,14 @@ input[type="checkbox"]{
    #Images{
     border-radius: 10px;
     color: rgb(255, 255, 255);
-    text-align: left;
     position: static;
-    font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    object-fit: contain;
-          }
+    margin-bottom: 30px;
+    padding: 10px 0px;
+    box-sizing: border-box;
+            }
 
 img[alt="img1"]:hover{
-     transform: scale(1.5);
+     transform: scale(1.8);
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685  );
      transition: 0.5s;
         }  
@@ -154,35 +152,42 @@ img[alt="img1"]:hover{
      
    
    img[alt="img2"]:hover{
-    transform: scale(1.5);
+    transform: scale(1.8);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685  );
     transition: 0.5s;
   }    
 
   img[alt="img3"]:hover{
-    transform: scale(1.5);
+    transform: scale(1.8);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685  );
     transition: 0.5s;
   }    
 
   img[alt="img4"]:hover{
-    transform: scale(1.5);
+    transform: scale(1.8);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685  );
     transition: 0.5s;
   }   
   
   
   img[alt="img1"]{
-    transition:0.3s
+    transition:0.3s;
+    border-radius: 10px;
   }
+
   img[alt="img2"]{
-    transition:0.3s
+    transition:0.3s;
+    border-radius: 10px;
   }
+
   img[alt="img3"]{
-    transition:0.3s
+    transition:0.3s;
+    border-radius: 10px;
   }
+
   img[alt="img4"]{
-    transition:0.3s
+    transition:0.3s;
+    border-radius: 10px;
   }
 
    #video{
