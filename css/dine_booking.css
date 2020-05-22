@@ -31,12 +31,13 @@ header{
     background-color: rgba(0, 0, 0, 0.774);
     color: rgb(255, 255, 255);
     font-size: 30px;
+    width: 100%;
     text-align: center;
-    position: relative;
-    top: 0px;
+    position: fixed;
     font-weight: bold;
     padding: 10px 10px 10px 10px;
     z-index: 1;
+    margin-bottom: 5px;
 }
 
 main{
@@ -145,7 +146,7 @@ input[type="checkbox"]{
 
 img[alt="img1"]:hover{
      transform: scale(1.8);
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685  );
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685);
      transition: 0.5s;
         }  
 
@@ -153,19 +154,19 @@ img[alt="img1"]:hover{
    
    img[alt="img2"]:hover{
     transform: scale(1.8);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685  );
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685);
     transition: 0.5s;
   }    
 
   img[alt="img3"]:hover{
     transform: scale(1.8);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685  );
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685);
     transition: 0.5s;
   }    
 
   img[alt="img4"]:hover{
     transform: scale(1.8);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685  );
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685);
     transition: 0.5s;
   }   
   
