@@ -3,10 +3,8 @@
 body{
   background-color: rgb(51, 6, 158);
   margin: 0px;
-  animation: animation1;
+  animation: animation1 15s;
     animation-iteration-count: infinite;
-    animation-duration: 4s;
-    animation-direction: alternate;
   
 }
 
@@ -33,9 +31,11 @@ input[name="members"]:out-of-range{
 
 @keyframes animation1{
   0% { background-color: rgba(255, 0, 0, 0.774); }
-  25% { background-color: rgba(255, 255, 0, 0.774); }
-  50%  { background-color: rgba(0, 0, 255, 0.774); }
-  100% { background-color: rgba(0, 128, 0, 0.774); }
+  20% { background-color: rgba(255, 136, 0, 0.774); }
+  40%  { background-color: rgba(0, 0, 255, 0.774); }
+  60% { background-color: rgba(0, 128, 0, 0.774); }
+  80% { background-color: rgba(171, 10, 192, 0.774);}
+    100% { background-color: rgba(255, 0, 0, 0.774); }
 }
 
 
