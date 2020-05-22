@@ -2,7 +2,7 @@
 
 body{
   background-color: rgb(51, 6, 158);
-  margin:0;
+  margin: 0px;
 }
 
 input[type="email"]{
@@ -32,8 +32,8 @@ header{
     color: rgb(255, 255, 255);
     font-size: 30px;
     text-align: center;
-    width: 100%;
-    position:fixed;
+    position: relative;
+    top: 0px;
     font-weight: bold;
     padding: 10px 10px 10px 10px;
     z-index: 1;
@@ -41,7 +41,6 @@ header{
 
 main{
     color: rgb(255, 255, 255);
-    width: 100%;
     font-weight: bold;
     resize: vertical;
     position: static;
@@ -108,22 +107,10 @@ input[type="checkbox"]{
 }
 
 
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .main{
-      width: 100%;
-      margin-top: 0;
-    }
-  }
-  
-
-
 #First{
     
     border-radius: 10px;
     color: rgb(255, 255, 255);
-    width: 100%;
     text-align: left;
     position: static;
     font-style: italic;
@@ -133,7 +120,6 @@ input[type="checkbox"]{
     
     border-radius: 10px;
     color: rgb(255, 255, 255);
-    width: 100%;
     text-align: left;
     position: static;
     font-style: italic;
@@ -142,7 +128,6 @@ input[type="checkbox"]{
    #Third{
     border-radius: 10px;
     color: rgb(255, 255, 255);
-    width: 100%;
     text-align: left;
     position: static;
     font-style: italic;
@@ -152,18 +137,41 @@ input[type="checkbox"]{
    #Images{
     border-radius: 10px;
     color: rgb(255, 255, 255);
-    width: 100%;
     text-align: left;
     position: static;
     font-weight: bold;
     padding-top: 20px;
     padding-bottom: 20px;
-   }
+    object-fit: contain;
+          }
+
+img[alt="img1"]:hover{
+     transform: scale(1.5);
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685  );
+     transition: 0.5s;
+        }    
+   
+   img[alt="img2"]:hover{
+    transform: scale(1.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685  );
+    transition: 0.5s;
+  }    
+
+  img[alt="img3"]:hover{
+    transform: scale(1.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685  );
+    transition: 0.5s;
+  }    
+
+  img[alt="img4"]:hover{
+    transform: scale(1.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685  );
+    transition: 0.5s;
+  }    
 
    #video{
     border-radius: 10px;
     color: rgb(255, 255, 255);
-    width: 100%;
     text-align: center;
     position: static;
     font-weight: bold;
@@ -174,7 +182,6 @@ input[type="checkbox"]{
    #gif{
     border-radius: 10px;
     color: rgb(255, 255, 255);
-    width: 100%;
     text-align: center;
     position: static;
     font-weight: bold;
@@ -187,7 +194,6 @@ input[type="checkbox"]{
     
     border-radius: 10px;
     color: rgb(255, 255, 255);
-    width: 100%;
     text-align: left;
     position: static;
     font-weight: bold;
@@ -197,7 +203,6 @@ input[type="checkbox"]{
    #Others{
     border-radius: 10px;
     color: rgb(255, 255, 255);
-    width: 100%;
     text-align: left;
     position: static;
     font-weight: bold;
@@ -211,10 +216,11 @@ input[type="checkbox"]{
     color: rgb(255, 255, 255);
     font-size: 30px;
     text-align: center;
-    width: 100%;
     font-weight: bold;
     padding: 10px 10px 10px 10px;
-    position: sticky;
+    position: relative;
+    bottom: 0px;
+    margin-right: 0px;
    }
 
    
