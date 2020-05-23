@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=1024">
     <title>Dine Booking</title>
     <link rel="stylesheet" href="css/dine_booking.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google Sans">
 </head>
 
 <body bgcolor="black" class="outer">
@@ -14,114 +15,112 @@
     <main>
         <center>
             <form name="booking" action="success.html" id="form_elements">
-                <i>
-                    <table cellspacing="20">
-                        <div>
-                            <tr>
-                                <td>
-                                    <label for="visitor_name">Visitor Name:</label>
-                                </td>
-                                <td>
-                                    <input class="Inputs" name="visitor_name" type="text" autofocus maxlength="20"
-                                        required>
-                                </td>
-                            </tr>
-                        </div>
+                <table cellspacing="20">
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="visitor_name">Visitor Name:</label>
+                            </td>
+                            <td>
+                                <input class="Inputs" name="visitor_name" type="text" autofocus maxlength="20" required>
+                            </td>
+                        </tr>
+                    </div>
 
-                        <div>
-                            <tr>
-                                <td>
-                                    <label for="members">Number of members:</label>
-                                </td>
-                                <td>
-                                    <input class="Inputs" name="members" type="number" min="0" max="99" required>
-                                </td>
-                            </tr>
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="members">Number of members:</label>
+                            </td>
+                            <td>
+                                <input class="Inputs" name="members" type="number" min="0" max="99" required>
+                            </td>
+                        </tr>
 
-                        </div>
-                        <div>
-                            <tr>
-                                <td>
-                                    <label for="contact">Contact No:</label>
-                                </td>
+                    </div>
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="contact">Contact No:</label>
+                            </td>
 
-                                <td>
-                                    <input class="Inputs" name="contact" type="number" max="9999999999" required>
-                                </td>
-                            </tr>
-                        </div>
+                            <td>
+                                <input class="Inputs" name="contact" type="number" max="9999999999" required>
+                            </td>
+                        </tr>
+                    </div>
 
-                        <div>
-                            <tr>
-                                <td>
-                                    <label for="email">Email:</label>
-                                </td>
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="email">Email:</label>
+                            </td>
 
-                                <td>
-                                    <input class="Inputs" name="email" type="email" required>
-                                </td>
-                            </tr>
-                        </div>
+                            <td>
+                                <input class="Inputs" name="email" type="email" required>
+                            </td>
+                        </tr>
+                    </div>
 
-                        <div>
-                            <tr>
-                                <td>
-                                    <label for="food_type">Type of Food:</label>
-                                </td>
-                                <td><span class="checkbox"></span>
-                                    <input name="food_type" type="checkbox" value="south indian" checked>South
-                                    Indian
-                                    <input name="food_type" type="checkbox" value="north indian">North Indian
-                                    <input name="food_type" type="checkbox" value="chinese">Chinese
-                                    <input name="food_type" type="checkbox" value="western">Western
-                                </td>
-                            </tr>
-                        </div>
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="food_type">Type of Food:</label>
+                            </td>
+                            <td><span class="checkbox"></span>
+                                <input name="food_type" type="checkbox" value="south indian" checked>South
+                                Indian
+                                <input name="food_type" type="checkbox" value="north indian">North Indian
+                                <input name="food_type" type="checkbox" value="chinese">Chinese
+                                <input name="food_type" type="checkbox" value="western">Western
+                            </td>
+                        </tr>
+                    </div>
 
-                        <div>
-                            <tr>
-                                <td>
-                                    <label for="room_status">Room Status:</label>
-                                </td>
-                                <td>
-                                    <input name="room_status" type="radio" value="AC" checked>AC
-                                    <input name="room_status" type="radio" value="Non-AC">Non-AC
-                                </td>
-                            </tr>
-                        </div>
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="room_status">Room Status:</label>
+                            </td>
+                            <td>
+                                <input name="room_status" type="radio" value="AC" checked>AC
+                                <input name="room_status" type="radio" value="Non-AC">Non-AC
+                            </td>
+                        </tr>
+                    </div>
 
-                        <div>
-                            <tr>
-                                <td>
-                                    <label for="venue">Venue Preference:</label>
-                                </td>
-                                <td>
-                                    <select name="venue" id="venue" required>
-                                        <option value="">--SELECT--</option>
-                                        <option value="arena">Arena</option>
-                                        <option value="fiesta">Fiesta</option>
-                                        <option value="vista">Vista</option>
-                                        <option value="mythri">Mythri</option>
-                                        <option value="magna">Magna</option>
-                                        <option value="oasis">Oasis</option>
-                                        <option value="" disabled>Amoeba</option>
-                                    </select>
-                                </td>
-                            </tr>
-                        </div>
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="venue">Venue Preference:</label>
+                            </td>
+                            <td>
+                                <select name="venue" id="venue" required>
+                                    <option value="">--SELECT--</option>
+                                    <option value="arena">Arena</option>
+                                    <option value="fiesta">Fiesta</option>
+                                    <option value="vista">Vista</option>
+                                    <option value="mythri">Mythri</option>
+                                    <option value="magna">Magna</option>
+                                    <option value="oasis">Oasis</option>
+                                    <option value="" disabled>Amoeba</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </div>
 
-                        <div>
-                            <tr>
-                                <td>
-                                    <button name="book" type="submit">Book</button>
-                                </td>
-                                <td>
-                                    <button name="reset" type="reset">Reset</button>
-                                </td>
-                            </tr>
-                        </div>
-                    </table>
-                </i>
+                    <div>
+                        <tr>
+                            <td>
+                                <button name="book" type="submit">Book</button>
+                            </td>
+                            <td>
+                                <button name="reset" type="reset">Reset</button>
+                            </td>
+                        </tr>
+                    </div>
+                </table>
+
             </form>
         </center>
     </main><br><br>
@@ -211,41 +210,40 @@
 
 
     <aside>
-        <h2>Some crazy words 💡</h2>
+        <h2>Some <span id="crazy">crazy</span> words</h2>
         <div id="Others">
             <dl>
                 <dt>
                     <b>Bumfuzzle</b>
                 </dt>
                 <dd>
-                    <i>This is a simple term that refers to being confused, perplexed, or flustered or to cause
-                        confusion.</i>
+                    This is a simple term that refers to being confused, perplexed, or flustered or to cause
+                    confusion.
                 </dd><br>
 
                 <dt>
                     <b>Cattywampus</b>
                 </dt>
                 <dd>
-                    <i>
-                        This is a term that you will find in the Midland and Southern <abbr
-                            title="United States">US</abbr>.
-                        It is referring to
-                        something
-                        that is in disarray, that is askew, or something that isn’t directly across from something.
-                    </i>
+
+                    This is a term that you will find in the Midland and Southern <abbr title="United States">US</abbr>.
+                    It is referring to
+                    something
+                    that is in disarray, that is askew, or something that isn’t directly across from something.
+
                 </dd><br>
 
                 <dt>
                     <b>Taradiddle</b>
                 </dt>
                 <dd>
-                    <i>
-                        This word references someone or something that is filled with pretentious nonsense or something
-                        that
-                        is
-                        a
-                        lie.
-                    </i>
+
+                    This word references someone or something that is filled with pretentious nonsense or something
+                    that
+                    is
+                    a
+                    lie.
+
                 </dd>
 
             </dl>
