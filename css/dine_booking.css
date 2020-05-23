@@ -1,13 +1,12 @@
 
 
 body{
-  background-color: rgb(51, 6, 158);
+  
   margin: 0px;
   animation: animation1 15s;
   animation-iteration-count: infinite;
   font-family: Google Sans;
-  
-}
+   }
 
 
 
@@ -48,12 +47,13 @@ header{
     background-color: rgba(0, 0, 0, 0.774);
     color: rgb(255, 255, 255);
     font-size: 30px;
-    width: 100%;
     text-align: center;
-    position: fixed;
+    position: relative;
+    top:0px;
+    left: 0px;
     font-weight: bold;
     padding: 20px 10px 25px 10px;
-    z-index: 1;
+    z-index: 0;
     transition: 0.5s;
 }
 
@@ -65,10 +65,10 @@ header:hover{
 
 main{
     color: rgb(255, 255, 255);
-    resize: vertical;
     position: static;
-    padding-top: 100px;
+    padding-top: 10px;
     font-size: 20px;
+    overflow: auto;
    }
 
    button[type="submit"]{
@@ -133,7 +133,7 @@ input[type="checkbox"]{
 
 #First{
     
-    border-radius: 10px;
+    
     color: rgb(255, 255, 255);
     text-align: left;
     position: static;
@@ -141,14 +141,12 @@ input[type="checkbox"]{
 
 #Second{
     
-    border-radius: 10px;
     color: rgb(255, 255, 255);
     text-align: left;
     position: static;
    }
 
    #Third{
-    border-radius: 10px;
     color: rgb(255, 255, 255);
     text-align: left;
     position: static;
@@ -156,7 +154,6 @@ input[type="checkbox"]{
 
 
    #Images{
-    border-radius: 10px;
     color: rgb(255, 255, 255);
     position: static;
     margin-bottom: 30px;
@@ -212,7 +209,6 @@ img[alt="img1"]:hover{
   }
 
    #video{
-    border-radius: 10px;
     color: rgb(255, 255, 255);
     text-align: center;
     position: static;
@@ -222,7 +218,6 @@ img[alt="img1"]:hover{
    }
 
    #gif{
-    border-radius: 10px;
     color: rgb(255, 255, 255);
     text-align: center;
     position: static;
@@ -231,24 +226,51 @@ img[alt="img1"]:hover{
     padding-bottom: 20px;
    }
 
+   img[alt="img5"]{
+    transition:0.3s;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+   img[alt="img5"]:hover{
+    transform: scale(1.8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685);
+    transition: 0.5s;
+  }   
    
 
    h2{
     
-    border-radius: 10px;
     color: rgb(255, 255, 255);
     text-align: left;
     position: static;
     padding-left: 30px;
+       }
+
+   #crazy{
+  transition: 0.5s;
+  display: inline-block;
    }
 
    #crazy:hover{
-    color: red;
+    transition: 0.5s;
+    animation: wiggle 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
   }
    
+  @keyframes wiggle{
+    0% {transform: scale(4.5); color: rgb(0, 0, 0);}
+    20% {transform: scale(1);color:white;}
+    40% {transform: scale(4.5);color: rgb(0, 0, 0);}
+    60% {transform: scale(1);color:white;}
+    80% {transform: scale(4.5);color: rgb(0, 0, 0);}
+    100% {transform: scale(1);color:white;}
+  }
+
 
    #Others{
-    border-radius: 10px;
     color: rgb(255, 255, 255);
     text-align: left;
     position: static;
@@ -260,14 +282,12 @@ img[alt="img1"]:hover{
    footer{
     background-color: rgba(0, 0, 0, 0.774);
     color: rgb(255, 255, 255);
-    width: 100%;
     font-size: 30px;
     text-align: center;
     font-weight: bold;
     padding: 25px 10px 20px 10px;
     position: relative;
     bottom: 0px;
-    margin-right: 0px;
     transition: 0.5s;
    }
 
