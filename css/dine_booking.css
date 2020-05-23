@@ -124,6 +124,7 @@ button[type=submit]:hover {
   border-radius: 100px;
   resize: vertical;
   border: none;
+  background-color: white;
 }
 
 input[type="checkbox"]{
