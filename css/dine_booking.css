@@ -4,9 +4,12 @@ body{
   background-color: rgb(51, 6, 158);
   margin: 0px;
   animation: animation1 15s;
-    animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  font-family: Google Sans;
   
 }
+
+
 
 input[type="email"]{
     background-color: rgb(156, 154, 231);
@@ -48,15 +51,20 @@ header{
     text-align: center;
     position: fixed;
     font-weight: bold;
-    padding: 15px 10px 15px 10px;
+    padding: 20px 10px 25px 10px;
     z-index: 1;
     margin-bottom: 5px;
-    
+    transition: 0.5s;
+}
+
+header:hover{
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.774);
+  color: black;
 }
 
 main{
     color: rgb(255, 255, 255);
-    font-weight: bold;
     resize: vertical;
     position: static;
     padding-top: 70px;
@@ -128,7 +136,6 @@ input[type="checkbox"]{
     color: rgb(255, 255, 255);
     text-align: left;
     position: static;
-    font-style: italic;
    }
 
 #Second{
@@ -137,7 +144,6 @@ input[type="checkbox"]{
     color: rgb(255, 255, 255);
     text-align: left;
     position: static;
-    font-style: italic;
    }
 
    #Third{
@@ -145,7 +151,6 @@ input[type="checkbox"]{
     color: rgb(255, 255, 255);
     text-align: left;
     position: static;
-    font-style: italic;
     }
 
 
@@ -225,6 +230,7 @@ img[alt="img1"]:hover{
     padding-bottom: 20px;
    }
 
+   
 
    h2{
     
@@ -232,16 +238,19 @@ img[alt="img1"]:hover{
     color: rgb(255, 255, 255);
     text-align: left;
     position: static;
-    font-weight: bold;
     padding-left: 30px;
    }
+
+   #crazy:hover{
+    color: red;
+  }
+   
 
    #Others{
     border-radius: 10px;
     color: rgb(255, 255, 255);
     text-align: left;
     position: static;
-    font-weight: bold;
     padding-bottom: 50px;
     padding-left: 30px;
    }
@@ -250,13 +259,19 @@ img[alt="img1"]:hover{
    footer{
     background-color: rgba(0, 0, 0, 0.774);
     color: rgb(255, 255, 255);
+    width: 100%;
     font-size: 30px;
     text-align: center;
     font-weight: bold;
-    padding: 10px 10px 10px 10px;
+    padding: 25px 10px 20px 10px;
     position: relative;
     bottom: 0px;
     margin-right: 0px;
+    transition: 0.5s;
    }
 
-   
+   footer:hover{
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.774);
+    color: black;
+  }
