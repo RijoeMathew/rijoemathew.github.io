@@ -67,7 +67,7 @@ main{
     color: rgb(255, 255, 255);
     resize: vertical;
     position: static;
-    padding-top: 70px;
+    padding-top: 100px;
    }
 
    button[type="submit"]{
