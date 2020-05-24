@@ -216,6 +216,7 @@ img[alt="img1"]:hover{
     font-weight: bold;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-radius: 10px;
    }
 
    #gif{
@@ -324,6 +325,9 @@ main{
   font-size: 15px;
   width: 400px;
   padding-left: 30px;
+  position: relative;
+  left:30px;
+  padding-bottom: 10px;
 }
 
 #First,#Second,#Third{
@@ -335,8 +339,8 @@ main{
 
 #Images{
   position: relative;
-  left:57px;
-
+  left:59px;
+  top:-12px;
 }
 
 #gif{
@@ -352,4 +356,34 @@ main{
     left:10px;
     width: 115%;
   }
+
+  #video{
+    position: relative;
+    left:27px
+  }
+
+#venue{
+  width:110%;
+ }
+
+button[type=reset]{
+position: relative;
+left: 30px;
+}
+
+h2{
+  position: relative;
+  left:10px;
+}
+
+option{
+  background-color: teal;
+  color: white;
+  outline: none;
+}
+
+option[disabled]{
+  background-color: black;
+}
+
 }
