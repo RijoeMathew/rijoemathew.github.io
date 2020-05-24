@@ -109,15 +109,11 @@ button[type=submit]:hover {
   border-radius: 100px;
   border: none;
   resize: vertical;
-  background-color: teal;
+  background-color: white;
 }
 
 .Inputs,#venue:focus{
   outline: none;
-}
-
-input{
-  text-decoration: white;
 }
 
 
@@ -128,7 +124,7 @@ input{
   border-radius: 100px;
   resize: vertical;
   border: none;
-  background-color: teal;
+  background-color: white;
 }
 
 input[type="checkbox"]{
@@ -236,6 +232,14 @@ img[alt="img1"]:hover{
     transition: 0.5s;
   }   
    
+
+  #video{
+    position: static;
+    text-align: center;
+    padding:0px;
+    padding-bottom: 15px;
+      }
+
 
    h2{
     
@@ -383,6 +387,10 @@ option{
 
 option[disabled]{
   background-color: black;
+}
+
+.Inputs,#venue{
+  background-color: teal;
 }
 
 }
