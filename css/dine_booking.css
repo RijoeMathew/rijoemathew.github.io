@@ -11,7 +11,6 @@ body{
 
 
 input[type="email"]{
-    background-color: rgb(156, 154, 231);
     border: none;
 }
 
@@ -110,10 +109,15 @@ button[type=submit]:hover {
   border-radius: 100px;
   border: none;
   resize: vertical;
+  background-color: teal;
 }
 
 .Inputs,#venue:focus{
   outline: none;
+}
+
+input{
+  text-decoration: white;
 }
 
 
@@ -124,7 +128,7 @@ button[type=submit]:hover {
   border-radius: 100px;
   resize: vertical;
   border: none;
-  background-color: white;
+  background-color: teal;
 }
 
 input[type="checkbox"]{
@@ -209,16 +213,7 @@ img[alt="img1"]:hover{
     border-radius: 10px;
   }
 
-   #video{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    position: static;
-    font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 10px;
-   }
-
+  
    #gif{
     color: rgb(255, 255, 255);
     text-align: center;
@@ -304,7 +299,6 @@ img[alt="img1"]:hover{
   @media screen and (max-width: 600px){
 header{
   background-color: rgba(0, 128, 128, 0.774);
-  
 }
 
 footer{
@@ -357,10 +351,15 @@ main{
     width: 115%;
   }
 
-  #video{
+  
+
+  video{
     position: relative;
-    left:27px
-  }
+    left:78px;
+    border-radius: 15px;
+    padding:0px;
+    padding-bottom: 15px;
+      }
 
 #venue{
   width:110%;
