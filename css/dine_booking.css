@@ -379,6 +379,10 @@ h2{
   left:10px;
 }
 
+select{
+appearance:none;
+}
+
 option{
   background-color: teal;
   color: white;
