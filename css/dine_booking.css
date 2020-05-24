@@ -48,13 +48,12 @@ header{
     color: rgb(255, 255, 255);
     font-size: 30px;
     text-align: center;
-    position: relative;
-    top:0px;
-    left: 0px;
+    position: fixed;
     font-weight: bold;
     padding: 20px 10px 25px 10px;
-    z-index: 0;
+    z-index: 1;
     transition: 0.5s;
+    width: 100%;
 }
 
 header:hover{
@@ -65,10 +64,11 @@ header:hover{
 
 main{
     color: rgb(255, 255, 255);
-    position: static;
+    position: relative;
+    top: 90px;
     padding-top: 10px;
     font-size: 20px;
-    overflow: auto;
+    margin-bottom: 50px;
    }
 
    button[type="submit"]{
@@ -78,7 +78,7 @@ main{
        border: 0px;
        border-radius: 4px;
        cursor: pointer;
-       float: right;
+       float: left;
        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685  );
     transition: 0.5s;
    }
@@ -223,7 +223,7 @@ img[alt="img1"]:hover{
     text-align: center;
     position: static;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-bottom: 20px;
    }
 
@@ -235,7 +235,7 @@ img[alt="img1"]:hover{
   }
 
    img[alt="img5"]:hover{
-    transform: scale(1.8);
+    transform: scale(1.4);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685);
     transition: 0.5s;
   }   
@@ -259,14 +259,15 @@ img[alt="img1"]:hover{
     animation: wiggle 1.5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
   }
    
   @keyframes wiggle{
-    0% {transform: scale(4.5); color: rgb(0, 0, 0);}
+    0% {transform: scale(4.5); color: tomato;}
     20% {transform: scale(1);color:white;}
-    40% {transform: scale(4.5);color: rgb(0, 0, 0);}
+    40% {transform: scale(4.5);color: tomato;}
     60% {transform: scale(1);color:white;}
-    80% {transform: scale(4.5);color: rgb(0, 0, 0);}
+    80% {transform: scale(4.5);color: tomato;}
     100% {transform: scale(1);color:white;}
   }
 
@@ -297,3 +298,58 @@ img[alt="img1"]:hover{
     background-color: rgba(255, 255, 255, 0.774);
     color: black;
   }
+
+
+  @media screen and (max-width: 600px){
+header{
+  background-color: rgba(0, 128, 128, 0.774);
+  
+}
+
+footer{
+  background-color: rgba(0, 128, 128, 0.774);
+  width: 128%;
+}
+
+body{
+  animation:none
+}
+
+img[alt="img1"],img[alt="img2"],img[alt="img3"],img[alt="img4"]{
+  width: 150px;
+  height: 75px;
+}
+
+main{
+  font-size: 15px;
+  width: 400px;
+  padding-left: 30px;
+}
+
+#First,#Second,#Third{
+
+  padding-left: 20px;
+  width: 115%;
+  text-align: justify;
+}
+
+#Images{
+  position: relative;
+  left:57px;
+
+}
+
+#gif{
+
+  position: relative;
+  left:59px;
+
+  }
+
+  #Others{
+  
+    position: relative;
+    left:10px;
+    width: 115%;
+  }
+}
