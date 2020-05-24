@@ -1,261 +1,261 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 
-    <html>
+<html>
 
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dine Booking</title>
-        <link rel="stylesheet" href="css/dine_booking.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google Sans">
-    </head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dine Booking</title>
+    <link rel="stylesheet" href="css/dine_booking.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google Sans">
+</head>
 
-    <body bgcolor="black" class="outer">
-        <header>Dine Booking</header>
+<body bgcolor="black" class="outer">
+    <header>Dine Booking</header>
 
-        <main>
+    <main>
+        <center>
+            <form name="booking" action="success.html" id="form_elements">
+                <table cellspacing="20">
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="visitor_name">Visitor Name:</label>
+                            </td>
+                            <td>
+                                <input class="Inputs" name="visitor_name" type="text" autofocus maxlength="20" required>
+                            </td>
+                        </tr>
+                    </div>
+
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="members">Number of members:</label>
+                            </td>
+                            <td>
+                                <input class="Inputs" name="members" type="number" min="0" max="99" required>
+                            </td>
+                        </tr>
+
+                    </div>
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="contact">Contact No:</label>
+                            </td>
+
+                            <td>
+                                <input class="Inputs" name="contact" type="number" max="9999999999" required>
+                            </td>
+                        </tr>
+                    </div>
+
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="email">Email:</label>
+                            </td>
+
+                            <td>
+                                <input class="Inputs" name="email" type="email" required>
+                            </td>
+                        </tr>
+                    </div>
+
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="food_type">Type of Food:</label>
+                            </td>
+                            <td><span class="checkbox"></span>
+                                <input name="food_type" type="checkbox" value="south indian" checked>South
+                                Indian
+                                <input name="food_type" type="checkbox" value="north indian">North Indian
+                                <input name="food_type" type="checkbox" value="chinese">Chinese
+                                <input name="food_type" type="checkbox" value="western">Western
+                            </td>
+                        </tr>
+                    </div>
+
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="room_status">Room Status:</label>
+                            </td>
+                            <td>
+                                <input name="room_status" type="radio" value="AC" checked>AC
+                                <input name="room_status" type="radio" value="Non-AC">Non-AC
+                            </td>
+                        </tr>
+                    </div>
+
+                    <div>
+                        <tr>
+                            <td>
+                                <label for="venue">Venue Preference:</label>
+                            </td>
+                            <td>
+                                <select name="venue" id="venue" required>
+                                    <option value="">--SELECT--</option>
+                                    <option value="arena">Arena</option>
+                                    <option value="fiesta">Fiesta</option>
+                                    <option value="vista">Vista</option>
+                                    <option value="mythri">Mythri</option>
+                                    <option value="magna">Magna</option>
+                                    <option value="oasis">Oasis</option>
+                                    <option value="" disabled>Amoeba</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </div>
+
+                    <div>
+                        <tr>
+                            <td>
+                                <button name="book" type="submit">Book</button>
+                            </td>
+                            <td>
+                                <button name="reset" type="reset">Reset</button>
+                            </td>
+                        </tr>
+                    </div>
+                </table>
+
+            </form>
+        </center>
+    </main><br><br>
+
+
+
+    <section>
+        <article id="First">
+            <ul type="disc">
+                <li>
+                    After finding a perfect blend of modernity and then blending with tradition, Bangalore has managed
+                    to rise up the ranks from merely being a garden city to become one of the most sought-after cities
+                    in the world.
+                </li><br>
+                <li>
+                    Some of these best restaurants in Bangalore are a testament to the changing times in Karnataka’s
+                    capital
+                    which has evolved into a rich and diverse food paradise for travelers and locals alike.
+                </li>
+            </ul>
+        </article><br><br>
+
+        <article id="Second">
+            <ul type="disc">
+                <li>
+                    Take a walk during the night through the streets of Bangalore and the pleasant aroma of the gourmet
+                    food that is prepared here every moment, is sure to leave you in awe.
+                </li><br>
+                <li>
+                    The lovely food prepared in the streets of Bangalore is no less tasty than the local and
+                    international cuisines at five-star restaurants.
+                </li>
+            </ul>
+        </article> <br><br>
+
+        <article id="Third">
+            <ul type="disc">
+                <li>
+                    From the hot and spicy Masala Dosa to the sweet and sublime Dal Holige drenched in pure ghee, there
+                    is everything on this Food Street in Bangalore that you may want to eat.
+                </li><br>
+                <li>
+                    The rose gulkand enriched with the goodness of pure Honey and white Butter is one thing you should
+                    not miss at the Shivanna Gulkand Center.
+                </li>
+            </ul>
+        </article> <br><br>
+
+
+
+
+        <article id="Images">
             <center>
-                <form name="booking" action="success.html" id="form_elements">
-                    <table cellspacing="20">
-                        <div>
-                            <tr>
-                                <td>
-                                    <label for="visitor_name">Visitor Name:</label>
-                                </td>
-                                <td>
-                                    <input class="Inputs" name="visitor_name" type="text" autofocus maxlength="20" required>
-                                </td>
-                            </tr>
-                        </div>
+                <table cellspacing="20">
+                    <tr>
+                        <td>
+                            <img src="assets/img1.jpg" alt="img1" width="300" height="150">
+                        </td>
+                        <td>
+                            <img src="assets/img2.jpg" alt="img2" width="300" height="150">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="assets/img3.jpg" alt="img3" width="300" height="150">
+                        </td>
 
-                        <div>
-                            <tr>
-                                <td>
-                                    <label for="members">Number of members:</label>
-                                </td>
-                                <td>
-                                    <input class="Inputs" name="members" type="number" min="0" max="99" required>
-                                </td>
-                            </tr>
+                        <td>
+                            <img src="assets/img4.jpg" alt="img4" width="300" height="150">
+                        </td>
+                    </tr>
 
-                        </div>
-                        <div>
-                            <tr>
-                                <td>
-                                    <label for="contact">Contact No:</label>
-                                </td>
-
-                                <td>
-                                    <input class="Inputs" name="contact" type="number" max="9999999999" required>
-                                </td>
-                            </tr>
-                        </div>
-
-                        <div>
-                            <tr>
-                                <td>
-                                    <label for="email">Email:</label>
-                                </td>
-
-                                <td>
-                                    <input class="Inputs" name="email" type="email" required>
-                                </td>
-                            </tr>
-                        </div>
-
-                        <div>
-                            <tr>
-                                <td>
-                                    <label for="food_type">Type of Food:</label>
-                                </td>
-                                <td><span class="checkbox"></span>
-                                    <input name="food_type" type="checkbox" value="south indian" checked>South
-                                    Indian
-                                    <input name="food_type" type="checkbox" value="north indian">North Indian
-                                    <input name="food_type" type="checkbox" value="chinese">Chinese
-                                    <input name="food_type" type="checkbox" value="western">Western
-                                </td>
-                            </tr>
-                        </div>
-
-                        <div>
-                            <tr>
-                                <td>
-                                    <label for="room_status">Room Status:</label>
-                                </td>
-                                <td>
-                                    <input name="room_status" type="radio" value="AC" checked>AC
-                                    <input name="room_status" type="radio" value="Non-AC">Non-AC
-                                </td>
-                            </tr>
-                        </div>
-
-                        <div>
-                            <tr>
-                                <td>
-                                    <label for="venue">Venue Preference:</label>
-                                </td>
-                                <td>
-                                    <select name="venue" id="venue" required>
-                                        <option value="">--SELECT--</option>
-                                        <option value="arena">Arena</option>
-                                        <option value="fiesta">Fiesta</option>
-                                        <option value="vista">Vista</option>
-                                        <option value="mythri">Mythri</option>
-                                        <option value="magna">Magna</option>
-                                        <option value="oasis">Oasis</option>
-                                        <option value="" disabled>Amoeba</option>
-                                    </select>
-                                </td>
-                            </tr>
-                        </div>
-
-                        <div>
-                            <tr>
-                                <td>
-                                    <button name="book" type="submit">Book</button>
-                                </td>
-                                <td>
-                                    <button name="reset" type="reset">Reset</button>
-                                </td>
-                            </tr>
-                        </div>
-                    </table>
-
-                </form>
+                </table>
             </center>
-        </main><br><br>
+        </article>
+
+        <article id="video">
+            <video src="assets/Fine Dining.mp4" width="390" height="220" loop controls
+                controlsList="nodownload"></video>
+        </article>
+
+        <article id="gif">
+            <img src="assets/wine.gif" alt="img5" width="300" height="150">
+        </article>
+
+    </section>
 
 
+    <aside>
+        <h2>Some <span id="crazy">crazy</span> words</h2>
+        <div id="Others">
+            <dl>
+                <dt>
+                    <b>Bumfuzzle</b>
+                </dt>
+                <dd>
+                    This is a simple term that refers to being confused, perplexed, or flustered or to cause
+                    confusion.
+                </dd><br>
 
-        <section>
-            <article id="First">
-                <ul type="disc">
-                    <li>
-                        After finding a perfect blend of modernity and then blending with tradition, Bangalore has managed
-                        to rise up the ranks from merely being a garden city to become one of the most sought-after cities
-                        in the world.
-                    </li><br>
-                    <li>
-                        Some of these best restaurants in Bangalore are a testament to the changing times in Karnataka’s
-                        capital
-                        which has evolved into a rich and diverse food paradise for travelers and locals alike.
-                    </li>
-                </ul>
-            </article><br><br>
+                <dt>
+                    <b>Cattywampus</b>
+                </dt>
+                <dd>
 
-            <article id="Second">
-                <ul type="disc">
-                    <li>
-                        Take a walk during the night through the streets of Bangalore and the pleasant aroma of the gourmet
-                        food that is prepared here every moment, is sure to leave you in awe.
-                    </li><br>
-                    <li>
-                        The lovely food prepared in the streets of Bangalore is no less tasty than the local and
-                        international cuisines at five-star restaurants.
-                    </li>
-                </ul>
-            </article> <br><br>
+                    This is a term that you will find in the Midland and Southern <abbr title="United States">US</abbr>.
+                    It is referring to
+                    something
+                    that is in disarray, that is askew, or something that isn’t directly across from something.
 
-            <article id="Third">
-                <ul type="disc">
-                    <li>
-                        From the hot and spicy Masala Dosa to the sweet and sublime Dal Holige drenched in pure ghee, there
-                        is everything on this Food Street in Bangalore that you may want to eat.
-                    </li><br>
-                    <li>
-                        The rose gulkand enriched with the goodness of pure Honey and white Butter is one thing you should
-                        not miss at the Shivanna Gulkand Center.
-                    </li>
-                </ul>
-            </article> <br><br>
+                </dd><br>
 
+                <dt>
+                    <b>Taradiddle</b>
+                </dt>
+                <dd>
 
+                    This word references someone or something that is filled with pretentious nonsense or something
+                    that
+                    is
+                    a
+                    lie.
 
+                </dd>
 
-            <article id="Images">
-                <center>
-                    <table cellspacing="20">
-                        <tr>
-                            <td>
-                                <img src="assets/img1.jpg" alt="img1" width="300" height="150">
-                            </td>
-                            <td>
-                                <img src="assets/img2.jpg" alt="img2" width="300" height="150">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="assets/img3.jpg" alt="img3" width="300" height="150">
-                            </td>
+            </dl>
+        </div>
+    </aside>
 
-                            <td>
-                                <img src="assets/img4.jpg" alt="img4" width="300" height="150">
-                            </td>
-                        </tr>
+    <footer>
+        <a href="https://www.google.com/search?sxsrf=ALeKk03gDNUfo5t89oK-IWu_MjYBCUAlnw%3A1588082038555&source=hp&ei=djWoXo6vH9rgrQHIoYeoAQ&q=rijoe+mathew+designs&oq=Rijoe+&gs_lcp=CgZwc3ktYWIQAxgAMgQIIxAnMgQIIxAnOgUIABCRAjoCCAA6BQgAEIMBOgQIABBDOgYIABAKEEM6BAgAEApQoAlY7xBglR1oAXAAeACAAacBiAGJB5IBAzAuNpgBAKABAaoBB2d3cy13aXo&sclient=psy-ab"
+            target="_blank" style="color: white;"><img src="assets/google.png" alt="Google Us" width="25"
+                height="25"></a>
+    </footer>
 
-                    </table>
-                </center>
-            </article>
+</body>
 
-            <div id="video">
-                <video src="assets/Fine Dining.mp4" width="390" height="220" loop controls
-                    controlsList="nodownload"></video>
-            </div>
-
-            <article id="gif">
-                <img src="assets/wine.gif" alt="img5" width="300" height="150">
-            </article>
-
-        </section>
-
-
-        <aside>
-            <h2>Some <span id="crazy">crazy</span> words</h2>
-            <div id="Others">
-                <dl>
-                    <dt>
-                        <b>Bumfuzzle</b>
-                    </dt>
-                    <dd>
-                        This is a simple term that refers to being confused, perplexed, or flustered or to cause
-                        confusion.
-                    </dd><br>
-
-                    <dt>
-                        <b>Cattywampus</b>
-                    </dt>
-                    <dd>
-
-                        This is a term that you will find in the Midland and Southern <abbr title="United States">US</abbr>.
-                        It is referring to
-                        something
-                        that is in disarray, that is askew, or something that isn’t directly across from something.
-
-                    </dd><br>
-
-                    <dt>
-                        <b>Taradiddle</b>
-                    </dt>
-                    <dd>
-
-                        This word references someone or something that is filled with pretentious nonsense or something
-                        that
-                        is
-                        a
-                        lie.
-
-                    </dd>
-
-                </dl>
-            </div>
-        </aside>
-
-        <footer>
-            <a href="https://www.google.com/search?sxsrf=ALeKk03gDNUfo5t89oK-IWu_MjYBCUAlnw%3A1588082038555&source=hp&ei=djWoXo6vH9rgrQHIoYeoAQ&q=rijoe+mathew+designs&oq=Rijoe+&gs_lcp=CgZwc3ktYWIQAxgAMgQIIxAnMgQIIxAnOgUIABCRAjoCCAA6BQgAEIMBOgQIABBDOgYIABAKEEM6BAgAEApQoAlY7xBglR1oAXAAeACAAacBiAGJB5IBAzAuNpgBAKABAaoBB2d3cy13aXo&sclient=psy-ab"
-                target="_blank" style="color: white;"><img src="assets/google.png" alt="Google Us" width="25"
-                    height="25"></a>
-        </footer>
-
-    </body>
-
-    </html>
+</html>
