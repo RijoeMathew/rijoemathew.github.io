@@ -3,33 +3,49 @@ body{
 }
 
 h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
     color: blue;
 }
 
 nav{
     background-color: blue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
     color: white;
     width: 100%;
     position: fixed;
     padding: 20px 10px 20px 10px;
-    transition: 0.5s
+    transition: 0.3s
 }
 
+/*
 nav:hover{
     background-color: cornflowerblue;
     transition: 0.5s;
 }
+*/
 
 a{
     text-decoration: none;
     color: white;
-    transition: 0.5s
+    transition: 0.3s
 }
 
 a:hover{
     color: black;
-    transition: 0.5s;
+    transition: 0.3s;
 }
+
+
+.home{
+    padding-left: inherit;
+    left: 60%;
+}
+
+
+.about-me{
+    padding-left: inherit;
+}
+
+
+
 
