@@ -47,6 +47,23 @@ a:hover{
     padding-left: inherit;
 }
 
+.three-stripe-menu {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0;    
+    transition: 0.5s;
+  }
 
+  .main-menu-button {
+    float: right;
+    margin-right: 5%;
+  }
 
-
+  .three-stripe-menu:hover {
+    width: 20px;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.5s;
+  }
