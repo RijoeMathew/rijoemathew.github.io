@@ -4,17 +4,18 @@ body{
 
 h1{
     font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-    color: blue;
+    color: black;
 }
 
 nav{
-    background-color: blue;
+    background-color: rgb(238, 95, 69);
     font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
     color: white;
     width: 100%;
     position: fixed;
-    padding: 20px 10px 20px 10px;
-    transition: 0.3s
+    padding: 30px 10px 27px 10px;
+    transition: 0.3s;
+    font-size: larger;
 }
 
 /*
@@ -33,6 +34,7 @@ a{
 a:hover{
     color: black;
     transition: 0.3s;
+    font-weight: bold;
 }
 
 
@@ -46,6 +48,46 @@ a:hover{
     padding-left: inherit;
 }
 
+.three-stripe-menu {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;    
+    transition: 0.5s;
+  }
+
+  .main-menu-button {
+    float: right;
+    margin-right: 5%;
+    cursor:pointer;
+  }
+
+  
+  #menu-line-1, #menu-line-2, #menu-line-3{
+    transition: 0.5s;
+  }
+
+  .main-menu-button:hover 
+  #menu-line-1{
+    transform: rotate(35deg);
+    transition: 0.5s;     
+  }
 
 
+  .main-menu-button:hover 
+  #menu-line-2{
+    transition: 0.5s;
+    width: 28px;
+  }
 
+
+  .main-menu-button:hover 
+  #menu-line-3{
+    transform: rotate(-35deg);
+    transition: 0.5s;    
+  }
+
+
+  a.main-menu-button::after{
+    transition: 0.5s;
+  }
