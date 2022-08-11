@@ -8,7 +8,7 @@ h1{
 }
 
 nav{
-    background-image: linear-gradient(to top, rgba(136, 81, 240, 0.808), rgba(136, 81, 240, 0.808)),url('https://cdn.pixabay.com/photo/2017/07/03/20/17/colorful-2468874_960_720.jpg');
+    background-image: linear-gradient(to top, rgba(136, 81, 240, 0.808), rgba(136, 81, 240, 0.808)),url('../Assets/nav-background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -97,4 +97,20 @@ a:hover{
 
   a.main-menu-button::after{
     transition: 0.5s;
+  }
+
+
+
+  #resume-link{
+    color: black;
+    font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+
+  #resume-link:hover{
+    color: rgb(5, 199, 79);
+    font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    transition: 0.3s;
+    font-weight: bold;
   }
