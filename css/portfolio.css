@@ -4,11 +4,14 @@ body{
 
 h1{
     font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-    color: black;
+    color: black;    
 }
 
-nav{
-    background-color: rgb(238, 95, 69);
+nav{        
+    background-image: linear-gradient(to top, rgba(238, 94, 69, 0.808), rgba(238, 94, 69, 0.808)),url('https://cdn.pixabay.com/photo/2017/07/03/20/17/colorful-2468874_960_720.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
     color: white;
     width: 100%;
@@ -18,12 +21,6 @@ nav{
     font-size: larger;
 }
 
-/*
-nav:hover{
-    background-color: cornflowerblue;
-    transition: 0.5s;
-}
-*/
 
 a{
     text-decoration: none;
@@ -37,6 +34,11 @@ a:hover{
     font-weight: bold;
 }
 
+.redirect{
+  color: black;
+  font-weight: bold;
+  font-size: x-large;
+}
 
 .home{
     padding-left: inherit;
@@ -87,6 +89,10 @@ a:hover{
     transition: 0.5s;    
   }
 
+
+  a.main-menu-button:hover {
+    color: black;
+  }
 
   a.main-menu-button::after{
     transition: 0.5s;
