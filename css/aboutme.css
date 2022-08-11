@@ -114,3 +114,8 @@ a:hover{
     transition: 0.3s;
     font-weight: bold;
   }
+
+  h2{
+    font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: bold;
+  }
