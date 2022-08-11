@@ -1,99 +1,122 @@
-body{  
-    margin: 0px;
+body {
+  margin: 0px;
 }
 
-h1{
-    font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-    color: black;    
+h1 {
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: black;
 }
 
-nav{        
-    background-image: linear-gradient(to top, rgba(238, 94, 69, 0.808), rgba(238, 94, 69, 0.808)),url('../Assets/nav-background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-    color: white;
-    width: 100%;
-    position: fixed;
-    padding: 30px 10px 27px 10px;
-    transition: 0.3s;
-    font-size: larger;
+nav {
+  background-image: linear-gradient(to top, rgba(238, 94, 69, 0.808), rgba(238, 94, 69, 0.808)), url('../Assets/nav-background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: white;
+  width: 100%;
+  position: fixed;
+  padding: 30px 10px 27px 10px;
+  transition: 0.3s;
+  font-size: larger;
 }
 
 
-a{
-    text-decoration: none;
-    color: white;
-    transition: 0.3s
+a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s
 }
 
-a:hover{
-    color: black;
-    transition: 0.3s;
-    font-weight: bold;
+a:hover {
+  color: black;
+  transition: 0.3s;
+  font-weight: bold;
 }
 
-.redirect{
+.redirect {
   color: black;
   font-weight: bold;
   font-size: x-large;
+  background-color: rgba(255, 255, 255, 0.247);
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.home{
-    padding-left: inherit;
-    left: 60%;
+.home {
+  padding-left: inherit;
+  left: 60%;
+  transition: 0.3s;
 }
 
 
-.about-me{
-    padding-left: inherit;
+.about-me {
+  padding-left: inherit;
+}
+
+.home:hover {
+  background-color: rgba(255, 255, 255, 0.459);
+  transition: 0.3s;
+  border-radius: 5px;
+  padding-left: inherit;
+  padding: 10px;
+  left: 60%;
+  font-size: x-large;
+}
+
+.about-me:hover {
+  background-color: rgba(255, 255, 255, 0.459);
+  transition: 0.3s;
+  border-radius: 5px;
+  padding-left: inherit;
+  padding: 10px;
+  left: 60%;
+  font-size: x-large;
 }
 
 .three-stripe-menu {
-    width: 30px;
-    height: 4px;
-    background-color: rgb(255, 255, 255);
-    margin: 6px 0;    
-    transition: 0.5s;
-  }
+  width: 30px;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  transition: 0.5s;
+}
 
-  .main-menu-button {
-    float: right;
-    margin-right: 5%;
-    cursor:pointer;
-  }
-
-  
-  #menu-line-1, #menu-line-2, #menu-line-3{
-    transition: 0.5s;
-  }
-
-  .main-menu-button:hover 
-  #menu-line-1{
-    transform: rotate(35deg);
-    transition: 0.5s;     
-  }
+.main-menu-button {
+  float: right;
+  margin-right: 5%;
+  cursor: pointer;
+}
 
 
-  .main-menu-button:hover 
-  #menu-line-2{
-    transition: 0.5s;
-    width: 28px;
-  }
+#menu-line-1,
+#menu-line-2,
+#menu-line-3 {
+  transition: 0.5s;
+}
+
+.main-menu-button:hover #menu-line-1 {
+  transform: rotate(35deg);
+  transition: 0.5s;
+}
 
 
-  .main-menu-button:hover 
-  #menu-line-3{
-    transform: rotate(-35deg);
-    transition: 0.5s;    
-  }
+.main-menu-button:hover #menu-line-2 {
+  transition: 0.5s;
+  width: 28px;
+}
 
 
-  a.main-menu-button:hover {
-    color: black;
-  }
+.main-menu-button:hover #menu-line-3 {
+  transform: rotate(-35deg);
+  transition: 0.5s;
+}
 
-  a.main-menu-button::after{
-    transition: 0.5s;
-  }
+
+a.main-menu-button:hover {
+  color: black;
+}
+
+a.main-menu-button::after {
+  transition: 0.5s;
+}

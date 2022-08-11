@@ -1,24 +1,26 @@
-body{  
-    margin: 0px;
+body {
+  margin: 0px;
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-h1{
-    font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-    color: black;
+h1 {
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: black;
 }
 
-nav{
-    background-image: linear-gradient(to top, rgba(136, 81, 240, 0.808), rgba(136, 81, 240, 0.808)),url('../Assets/nav-background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-    color: white;
-    width: 100%;
-    position: fixed;
-    padding: 30px 10px 27px 10px;
-    transition: 0.3s;
-    font-size: larger;
+nav {
+
+  background-image: linear-gradient(to top, rgba(136, 81, 240, 0.808), rgba(136, 81, 240, 0.808)), url('../Assets/nav-background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: white;
+  width: 100%;
+  position: fixed;
+  padding: 30px 10px 27px 10px;
+  transition: 0.3s;
+  font-size: larger;
 }
 
 /*
@@ -28,94 +30,171 @@ nav:hover{
 }
 */
 
-a{
-    text-decoration: none;
-    color: white;
-    transition: 0.3s
+a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s
 }
 
-a:hover{
-    color: black;
-    transition: 0.3s;
-    font-weight: bold;
-}
-
-
-
-.home{
-    padding-left: inherit;
-    left: 60%;
+a:hover {
+  color: black;
+  transition: 0.3s;
+  font-weight: bold;
 }
 
 
-.about-me{
-    padding-left: inherit;
-    color: black;
-    font-weight: bold;
-    font-size: x-large;
+
+.home {
+  padding-left: inherit;
+  left: 60%;
+}
+
+
+.about-me {
+  padding-left: inherit;
+  color: black;
+  font-weight: bold;
+  font-size: x-large;
+  background-color: rgba(255, 255, 255, 0.247);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.home:hover {
+  background-color: rgba(255, 255, 255, 0.459);
+  transition: 0.3s;
+  border-radius: 5px;
+  padding-left: inherit;
+  padding: 10px;
+  left: 60%;
+  font-size: x-large;
+}
+
+.redirect:hover {
+  background-color: rgba(255, 255, 255, 0.459);
+  transition: 0.3s;
+  border-radius: 5px;
+  padding-left: inherit;
+  padding: 10px;
+  left: 60%;
+  font-size: x-large;
 }
 
 .three-stripe-menu {
-    width: 30px;
-    height: 4px;
-    background-color: rgb(255, 255, 255);
-    margin: 6px 0;    
-    transition: 0.5s;
+  width: 30px;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  transition: 0.5s;
+}
+
+.main-menu-button {
+  float: right;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+
+#menu-line-1,
+#menu-line-2,
+#menu-line-3 {
+  transition: 0.5s;
+}
+
+.main-menu-button:hover #menu-line-1 {
+  transform: rotate(35deg);
+  transition: 0.5s;
+}
+
+
+.main-menu-button:hover #menu-line-2 {
+  transition: 0.5s;
+  width: 28px;
+}
+
+
+.main-menu-button:hover #menu-line-3 {
+  transform: rotate(-35deg);
+  transition: 0.5s;
+}
+
+
+a.main-menu-button::after {
+  transition: 0.5s;
+}
+
+
+
+#resume-link {
+  color: black;
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: bold;
+  animation: wiggle 2.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+h2 {
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: bold;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: scale(4.5);
+    color: rgba(136, 81, 240);
   }
 
-  .main-menu-button {
-    float: right;
-    margin-right: 5%;
-    cursor:pointer;
+  20% {
+    transform: scale(1);
+    color: white;
   }
 
-  
-  #menu-line-1, #menu-line-2, #menu-line-3{
-    transition: 0.5s;
+  40% {
+    transform: scale(4.5);
+    color: rgba(136, 81, 240);
   }
 
-  .main-menu-button:hover 
-  #menu-line-1{
-    transform: rotate(35deg);
-    transition: 0.5s;
+  60% {
+    transform: scale(1);
+    color: white;
   }
 
-
-  .main-menu-button:hover 
-  #menu-line-2{
-    transition: 0.5s;
-    width: 28px;
+  80% {
+    transform: scale(4.5);
+    color: rgba(136, 81, 240);
   }
 
-
-  .main-menu-button:hover 
-  #menu-line-3{
-    transform: rotate(-35deg);
-    transition: 0.5s; 
+  100% {
+    transform: scale(1);
+    color: white;
   }
+}
 
 
-  a.main-menu-button::after{
-    transition: 0.5s;
-  }
+section {
+  margin: 10px;
+}
 
+img {
+  transition: 0.3s;
+  border-radius: 20px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 10%;
+  height: 10%;
+  float:left;
+}
 
+img:hover{
+  transform: scale(0.9);
+  transition: 0.5s;
+}
 
-  #resume-link{
-    color: black;
-    font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-    transition: 0.3s;
-    font-weight: bold;
-  }
+#para-1{
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: large;
+}
 
-  #resume-link:hover{
-    color: rgb(5, 199, 79);
-    font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-    transition: 0.3s;
-    font-weight: bold;
-  }
-
-  h2{
-    font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: bold;
-  }
