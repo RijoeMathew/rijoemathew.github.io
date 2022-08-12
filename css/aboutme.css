@@ -47,6 +47,7 @@ a:hover {
 .home {
   padding-left: inherit;
   left: 60%;
+  transition: 0.3s;
 }
 
 
@@ -58,6 +59,7 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.247);
   padding: 10px;
   border-radius: 5px;
+  transition: 0.3s;
 }
 
 .home:hover {
@@ -174,7 +176,7 @@ h2 {
 
 
 section {
-  margin: 10px;
+  margin-left: 10px;
 }
 
 img {
@@ -208,10 +210,11 @@ table{
 .bottom-nav{
   background-image: linear-gradient(to top, rgba(136, 81, 240, 0.808), rgba(136, 81, 240, 0.808)), url('../Assets/nav-background.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: 100% 100%;
+  background-attachment: fixed;
   position: fixed;
-  position: relative;
   bottom: 0px;
+  width: 100%;
 }
+
 
