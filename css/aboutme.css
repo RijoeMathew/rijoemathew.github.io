@@ -125,55 +125,23 @@ a.main-menu-button::after {
   transition: 0.5s;
 }
 
+#download-bar{
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: bold;
+  font-size: small;
+}
 
 
 #resume-link {
-  color: black;
-  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: bold;
-  animation: wiggle 2.5s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  color: rgba(136, 81, 240);
 }
+
+
 
 h2 {
   font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: bold;
 }
-
-@keyframes wiggle {
-  0% {
-    transform: scale(4.5);
-    color: rgba(136, 81, 240);
-  }
-
-  20% {
-    transform: scale(1);
-    color: white;
-  }
-
-  40% {
-    transform: scale(4.5);
-    color: rgba(136, 81, 240);
-  }
-
-  60% {
-    transform: scale(1);
-    color: white;
-  }
-
-  80% {
-    transform: scale(4.5);
-    color: rgba(136, 81, 240);
-  }
-
-  100% {
-    transform: scale(1);
-    color: white;
-  }
-}
-
 
 section {
   margin-left: 10px;
@@ -215,6 +183,11 @@ table{
   position: fixed;
   bottom: 0px;
   width: 100%;
+  margin-bottom: 0px;
 }
 
+.download-bar{
+  position: fixed;
+  bottom: 300px;
+}
 
