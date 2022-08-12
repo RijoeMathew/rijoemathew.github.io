@@ -178,23 +178,40 @@ section {
 }
 
 img {
-  transition: 0.3s;
-  border-radius: 20px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  width: 10%;
-  height: 10%;
-  float:left;
+  transition: 0.5s;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
 }
+
 
 img:hover{
   transform: scale(0.9);
   transition: 0.5s;
 }
 
-#para-1{
-  padding-left: 20px;
+#profile-desc{
+  border-radius: 10px;
   font-weight: bold;
   font-size: large;
+}
+
+img[alt="linkedin"],img[alt="instagram"],img[alt="facebook"],img[alt="twitter"]{
+  height: 40px;
+  width: 40px;
+}
+
+table{
+  border-spacing: 20px;
+}
+
+.bottom-nav{
+  background-image: linear-gradient(to top, rgba(136, 81, 240, 0.808), rgba(136, 81, 240, 0.808)), url('../Assets/nav-background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  position: fixed;
+  position: relative;
+  bottom: 0px;
 }
 
