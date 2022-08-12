@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: scroll;
 }
 
 h1 {
