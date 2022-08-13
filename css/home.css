@@ -128,3 +128,18 @@ h1{
   margin-left: 10px;
   color:  rgba(100, 149, 237, 0.808);
 }
+
+
+.weather{
+  width: 48%;
+  margin-left: 25px;
+}
+
+.ww-box{
+  border-radius: 21px;  
+  padding: 50px;
+}
+
+#ww_9c10a0a28dc08{
+  background-color: transparent !important;
+}
