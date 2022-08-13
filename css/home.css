@@ -19,6 +19,7 @@ nav {
   padding: 30px 10px 27px 10px;
   transition: 0.3s;
   font-size: larger;
+  z-index: 2;
 }
 
 /*
