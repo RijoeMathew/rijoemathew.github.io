@@ -122,3 +122,8 @@ a:active {
 a.main-menu-button::after {
   transition: 0.5s;
 }
+
+h1{
+  margin-left: 10px;
+  color:  rgba(100, 149, 237, 0.808);
+}
