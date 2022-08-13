@@ -248,3 +248,17 @@ table{
   top: 190px;
   left: 230px;
 }
+
+@media screen and (max-width: 600px){
+  .profile-details{
+    width: 420px;
+    position: absolute;
+    top: 420px;
+    left: 30px;
+  }
+
+  .gradient-border{
+    position: relative;
+    left: 140px;
+  }
+  }
