@@ -8,11 +8,11 @@ body {
 
 h1 {
   font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-  color: rgba(136, 81, 240, 0.808);
+  color: rgba(230, 69, 69, 0.808);
 }
 
 nav {
-  background-image: linear-gradient(to top, rgba(136, 81, 240, 0.808), rgba(136, 81, 240, 0.808)), url('../Assets/nav-background.jpg');
+  background-image: linear-gradient(to top, rgba(230, 69, 69, 0.808), rgba(230, 69, 69, 0.808)), url('../Assets/nav-background.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -176,7 +176,7 @@ table{
 }
 
 .bottom-nav{
-  background-image: linear-gradient(to top, rgba(137, 81, 240, 0.918), rgba(136, 81, 240, 0.918)), url('../Assets/nav-background.jpg');
+  background-image: linear-gradient(to top, rgba(230, 69, 69, 0.918), rgba(230, 69, 69, 0.918)), url('../Assets/nav-background.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -217,13 +217,13 @@ table{
     height: calc(100% + var(--border-width) * 2);
     background: linear-gradient(
       60deg,
-      rgba(136, 81, 240),
+      rgba(230, 69, 69),
       rgb(0, 0, 0),
-      rgba(136, 81, 240),
+      rgba(230, 69, 69),
       rgb(0, 0, 0),
-      rgba(136, 81, 240),
+      rgba(230, 69, 69),
       rgb(0, 0, 0),
-      rgba(136, 81, 240),
+      rgba(230, 69, 69),
       rgb(0, 0, 0)
     );
     background-size: 300% 300%;
@@ -240,7 +240,7 @@ table{
 }
 
 .profile-details{
-  background-image: linear-gradient(to top, rgba(137, 81, 240, 0.918), rgba(136, 81, 240, 0.918)), url('../Assets/nav-background.jpg');
+  background-image: linear-gradient(to top, rgba(230, 69, 69, 0.918), rgba(230, 69, 69, 0.918)), url('../Assets/nav-background.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
