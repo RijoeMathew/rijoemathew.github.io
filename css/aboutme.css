@@ -122,7 +122,11 @@ a.main-menu-button::after {
 
 
 #resume-link {
-  color: white;
+  color: rgb(0, 0, 0);
+}
+
+#resume-link:hover {
+  font-weight: normal;
 }
 
 
@@ -236,17 +240,22 @@ table{
 }
 
 .profile-details{
-  background-image: linear-gradient(to top, rgba(136, 81, 240, 0.918), rgba(136, 81, 240, 0.918)), url('../Assets/nav-background.jpg');
+  background-image: linear-gradient(to top, rgba(137, 81, 240, 0.918), rgba(136, 81, 240, 0.918)), url('../Assets/nav-background.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
-  color: black;
+  color: rgb(255, 255, 255);
   width: 60%;
   border-radius: 21px;
   padding: 10px 10px;
   position: absolute;
   top: 190px;
   left: 230px;
+  font-weight: normal;
+}
+
+#profile-desc{
+  font-weight: normal;
 }
 
 @media screen and (max-width: 600px){
