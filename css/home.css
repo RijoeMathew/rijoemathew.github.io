@@ -136,12 +136,57 @@ h1{
   background-color: transparent !important;
 }
 
+.Grid__Container-sc-x730z7-0{
+  margin-left: 27px !important;
+  margin-right: 29px !important;
+}
+
+#eapps-rss-feed-5e9423ba-4813-4e29-b822-8153364378e0{
+  position: relative;
+  left: -475px;
+  margin-bottom: 15px;
+}
+
+.eapps-widget-toolbar{
+  display: none !important;
+}
+
+a[target = "_blank"]{
+  display: none !important;
+}
+
+.ButtonBase__Ellipsis-sc-p43e7i-5{
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: white;
+  font-size: large;
+  background-color: rgba(100, 149, 237, 0.918);
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+.CardLayout__Container-sc-1degoda-5{
+  background-image: linear-gradient(to top, rgba(100, 149, 237, 0.918), rgba(100, 149, 237, 0.918)), url('../Assets/nav-background.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
+  background-attachment: local !important;
+  border-radius: 21px !important;
+  transition: 0.5s;
+}
+
+.CardLayout__Container-sc-1degoda-5:hover{
+  transform: scale(0.9);
+  transition: 0.5s;
+}
 
 @media screen and (max-width: 600px){
   .weather{
     width: 450px;
     margin-left: 27px;
     margin-right: 29px;
+  }
+
+  #eapps-rss-feed-5e9423ba-4813-4e29-b822-8153364378e0{
+    position: initial;
   }
 
 }
