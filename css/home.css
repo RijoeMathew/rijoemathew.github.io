@@ -189,4 +189,9 @@ a[target = "_blank"]{
     position: initial;
   }
 
+  .CardLayout__Container-sc-1degoda-5:hover{
+    transform: none;
+    transition: none;
+  }
+
 }
