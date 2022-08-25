@@ -258,7 +258,7 @@ table{
   font-weight: normal;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1000px){
   .profile-details{
     width: 420px;
     position: absolute;
