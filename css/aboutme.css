@@ -9,6 +9,7 @@ body {
 h1 {
   font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   color: rgba(231, 123, 123, 0.918);
+  margin-left: 20px;
 }
 
 nav {
@@ -26,12 +27,6 @@ nav {
   z-index: 2;
 }
 
-/*
-nav:hover{
-    background-color: cornflowerblue;
-    transition: 0.5s;
-}
-*/
 
 a {
   text-decoration: none;
@@ -144,8 +139,8 @@ img[alt="profile-img"] {
   transition: 0.5s;
   width: 200px;
   height: 200px;
-  border-radius: 10px;  
-  position: inherit;
+  border-radius: 10px;
+  margin-left: 20px;
 }
 
 
@@ -156,8 +151,8 @@ img[alt="profile-img"]:hover{
 
 #profile-desc{
   border-radius: 10px;
-  font-weight: bold;
   font-size: large;
+  font-weight: normal;
 }
 
 img[alt="linkedin"],img[alt="instagram"],img[alt="facebook"],img[alt="twitter"]{
@@ -191,6 +186,7 @@ table{
   bottom: 300px;
 }
 
+/*
 .gradient-border {
   --border-width: 3px;
 
@@ -239,36 +235,56 @@ table{
   }
 }
 
+*/
+
 .profile-details{
   background-image: linear-gradient(to top, rgba(231, 123, 123, 0.918), rgba(231, 123, 123, 0.918)), url('../Assets/nav-background.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
   color: rgb(255, 255, 255);
-  width: 60%;
+  width: 70%;
   border-radius: 21px;
-  padding: 10px 10px;
-  position: absolute;
-  top: 190px;
-  left: 230px;
+  padding: 20px 20px;
+  position: relative;
+  top: -222px;
+  left: 250px;
   font-weight: normal;  
 }
 
-#profile-desc{
-  font-weight: normal;
-}
 
 @media screen and (max-width: 1000px){
   .profile-details{
-    width: 420px;
-    position: absolute;
-    top: 420px;
-    left: 30px;
+    width: fit-content;
+    position: inherit;
+    margin-left: 20px;
+    margin-right: 30px;
   }
 
+  /*  
   .gradient-border{
     position: relative;
     left: 140px;
+  }
+  */
+
+  img[alt="profile-img"] {
+    margin-left: auto;
+    margin-right: auto;
+    position: inherit;
+    width: 200px;
+    height: 200px;
+  }
+
+  #profile-box{
+    text-align: center;
+  }
+
+  h1{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 60%;
   }
   }
 

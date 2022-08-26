@@ -123,8 +123,9 @@ h1{
 
 
 .weather{
-  width: 48%;
-  margin-left: 25px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ww-box{
@@ -143,7 +144,8 @@ h1{
 
 #eapps-rss-feed-5e9423ba-4813-4e29-b822-8153364378e0{
   position: relative;
-  left: -475px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 15px;
 }
 
@@ -181,8 +183,6 @@ a[target = "_blank"]{
 @media screen and (max-width: 1000px){
   .weather{
     width: 450px;
-    margin-left: 27px;
-    margin-right: 29px;
   }
 
   #eapps-rss-feed-5e9423ba-4813-4e29-b822-8153364378e0{
