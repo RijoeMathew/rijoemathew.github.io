@@ -10,20 +10,29 @@
 </head>
 
 <body class="main">
-    <nav>
-        <a class="home" href="index.html">Home</a>
-        <a class="about-me" role="link" aria-disabled="true">About Me</a>
-        <a class="main-menu-button" href="index.html">
+    <input class="side-nav-button" href="index.html" type="checkbox" id="check">
+        <label for="check" id="side-menu-button">
             <div id="menu-line-1" class="three-stripe-menu"></div>
             <div id="menu-line-2" class="three-stripe-menu"></div>
             <div id="menu-line-3" class="three-stripe-menu"></div>
-        </a>
+        </label>
+    <nav>
+        <a class="home" href="index.html">Home</a>
+        <a class="about-me" role="link" aria-disabled="true">About Me</a>
     </nav>
     <br>
     <br>
     <br>
     <br>
     <br>
+
+    <aside class="sidebar">
+        <div class="sidebar-items-wrapper">
+            <li onclick="location.href='index.html';">Home</li>
+            <li onclick="location.href='aboutme.html';">Profile</li>
+        </div>
+    </aside>
+
     <section>
         <h1>
             Rijoe Chacko Mathew

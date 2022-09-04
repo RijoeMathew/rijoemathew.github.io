@@ -29,13 +29,13 @@ nav {
 }
 
 
-a {
+.home, .about-me {
   text-decoration: none;
   color: white;
   transition: 0.3s
 }
 
-a:hover {
+.home, .about-me:hover {
   color: black;
   transition: 0.3s;
   font-weight: bold;
@@ -72,7 +72,10 @@ a:hover {
   font-size: x-large;
 }
 
-.three-stripe-menu {
+
+#menu-line-1,
+#menu-line-2,
+#menu-line-3{
   width: 30px;
   height: 4px;
   background-color: rgb(255, 255, 255);
@@ -80,40 +83,147 @@ a:hover {
   transition: 0.5s;
 }
 
-.main-menu-button {
-  float: right;
-  margin-right: 5%;
+#side-menu-button{  
+  position: fixed;
+  right: 0px;
+  top: 19px;
+  z-index: 1000;
+  margin-right: 30px;
+  transition: 1s;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 5px;
+  box-sizing:border-box;
+  padding: 5px 10px;
   cursor: pointer;
 }
 
-
-#menu-line-1,
-#menu-line-2,
-#menu-line-3 {
-  transition: 0.5s;
-}
-
-.main-menu-button:hover #menu-line-1 {
+#side-menu-button:hover #menu-line-1 {
   transform: rotate(-35deg);
   transition: 0.5s;
 }
 
 
-.main-menu-button:hover #menu-line-2 {
+#side-menu-button:hover #menu-line-2 {
   transition: 0.5s;
   position: relative;
   left: 2px;
 }
 
-.main-menu-button:hover #menu-line-3 {
+#side-menu-button:hover #menu-line-3 {
   transform: rotate(35deg);
   transition: 0.5s;
 }
 
 
-a.main-menu-button::after {
+#side-menu-button::after {
   transition: 0.5s;
 }
+
+
+.sidebar{  
+  z-index: 900;
+  position: fixed;
+  right: -500px;
+  top: 0px;
+  width: 300px;
+  height: 100%;
+  background-color: rgb(231, 123, 123);
+  transition: all 0.5s;  
+}
+
+li{  
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;  
+  padding: 20px;
+  transition: all 0.5s;
+  text-align: center;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+li:hover{
+  background-color: white;
+  transition: all 0.5s;
+  color: black;
+  cursor: pointer;
+}
+
+
+.sidebar-items-wrapper{
+  margin-top: 100px;  
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+#check{
+  display: none;
+}
+
+#check:checked ~ .sidebar{
+  right: 0px;
+  transition: all 0.5s;
+ }
+
+ 
+ #check:checked ~ #side-menu-button:hover #menu-line-1 {
+  transform: rotate(40deg) !important;
+  transition: 0.5s;
+  position: relative;
+  bottom: -10px;
+}
+
+#check:checked ~ #side-menu-button{
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 5px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 4px;
+  position: fixed;
+  top: 6px;
+  right: -27px;
+  transition: none;
+}
+
+#check ~ #side-menu-button{
+  transition: none;
+}
+
+#check:checked ~ #side-menu-button:hover #menu-line-2 {
+  display: none;
+}
+
+#check:checked ~ #side-menu-button:hover #menu-line-3 {
+  transform: rotate(-40deg);
+  transition: 0.5s;
+}
+
+#check:checked ~ #side-menu-button #menu-line-1 {
+  transform: rotate(40deg) !important;
+  transition: 0.5s;
+  position: relative;
+  bottom: -10px;
+}
+
+
+#check:checked ~ #side-menu-button #menu-line-2 {
+  display: none;
+}
+
+#check:checked ~ #side-menu-button #menu-line-3 {
+  transform: rotate(-40deg);
+  transition: 0.5s;
+}
+
 
 
 
