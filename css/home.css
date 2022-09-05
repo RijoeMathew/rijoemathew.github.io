@@ -111,9 +111,9 @@ a:active {
 
 
 #side-menu-button:hover #menu-line-2 {
-  transition: 0.5s;
+  transition: all 0.5s;
   position: relative;
-  left: 2px;
+  left: 2px;  
 }
 
 #side-menu-button:hover #menu-line-3 {
@@ -134,8 +134,9 @@ a:active {
   top: 0px;
   width: 300px;
   height: 100%;
-  background-color: rgb(100, 149, 237);
+  background-color: rgb(100, 149, 237, 0.74);
   transition: all 0.5s;  
+  backdrop-filter: saturate(180%) blur(10px);
 }
 
 li{  
@@ -311,6 +312,28 @@ a[target = "_blank"]{
     text-align: center;
     margin-left: unset !important;
     z-index: 2;
+  }
+
+  #side-menu-button:hover #menu-line-1{
+    transform: none;
+  }
+
+  #side-menu-button:hover #menu-line-2{
+    transform: none;
+    position: initial;
+  }
+
+  #side-menu-button:hover #menu-line-3{
+    transform: none;
+  }
+
+  li{  
+    background-color: white;
+    color: rgba(100, 149, 237)
+  }
+
+  li:hover{
+    color: rgba(100, 149, 237)
   }
 
 }

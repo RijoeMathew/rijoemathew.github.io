@@ -35,10 +35,9 @@ nav {
   transition: 0.3s
 }
 
-.home, .about-me:hover {
-  color: black;
+.home:hover {
+  color: black !important;
   transition: 0.3s;
-  font-weight: bold;
 }
 
 
@@ -47,6 +46,7 @@ nav {
   padding-left: inherit;
   left: 60%;
   transition: 0.3s;
+  color: white;
 }
 
 
@@ -129,8 +129,9 @@ nav {
   top: 0px;
   width: 300px;
   height: 100%;
-  background-color: rgb(231, 123, 123);
-  transition: all 0.5s;  
+  background-color: rgba(231, 123, 123, 0.74);
+  transition: all 0.5s;
+  backdrop-filter: saturate(180%) blur(10px);
 }
 
 li{  
@@ -229,11 +230,10 @@ li:hover{
 
 #resume-link {
   color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
 }
 
-#resume-link:hover {
-  font-weight: normal;
-}
 
 
 
@@ -410,6 +410,29 @@ table{
     transform: none;
     transition: 0.5s;
   }
+
+  #side-menu-button:hover #menu-line-1{
+    transform: none;
+  }
+
+  #side-menu-button:hover #menu-line-2{
+    transform: none;
+    position: initial;
+  }
+
+  #side-menu-button:hover #menu-line-3{
+    transform: none;
+  }
+
+  li{  
+    background-color: white;
+    color: rgba(231, 123, 123)
+  }
+
+  li:hover{
+    color: rgba(231, 123, 123)
+  }
+
   }
 
 
