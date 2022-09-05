@@ -33,7 +33,6 @@ nav {
   text-decoration: none;
   color: white;
   transition: 0.3s;
-  backdrop-filter: saturate(100%) blur(5px);
 }
 
 .home:hover {
