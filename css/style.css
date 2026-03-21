@@ -1484,6 +1484,11 @@ body.theme-transitioning * {
     text-shadow: none;
 }
 
+[data-theme="light"] .hero-content .btn,
+[data-theme="light"] .hero-content .btn * {
+    text-shadow: none;
+}
+
 [data-theme="light"] .hero-desc,
 [data-theme="light"] .hero-greeting,
 [data-theme="light"] .hero-subtitle,
