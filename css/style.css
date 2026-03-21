@@ -126,8 +126,8 @@ ul {
 
 /* ---- Theme Toggle Button ---- */
 .theme-toggle {
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     border: 1px solid var(--glass-border);
     background: var(--bg-card);
@@ -820,6 +820,22 @@ ul {
     opacity: 1;
 }
 
+/* Touch devices: always show overlay so project links are tappable */
+@media (hover: none) {
+    .project-overlay {
+        opacity: 1;
+        background: rgba(10, 10, 15, 0.6);
+    }
+
+    .project-link-btn {
+        transform: translateY(0);
+    }
+
+    .skill-card {
+        transform: none !important;
+    }
+}
+
 .project-links {
     display: flex;
     gap: 16px;
@@ -1223,13 +1239,17 @@ ul {
         --section-padding: 70px 0;
     }
 
-    .nav-links,
-    .nav-actions {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-resume-btn {
         display: none;
     }
 
     .hamburger {
         display: flex;
+        margin-left: 10px;
     }
 
     .mobile-link {
