@@ -464,15 +464,11 @@ ul {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 120px;
 }
 
 /* Scroll Indicator */
 .scroll-indicator {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1036,25 +1032,27 @@ ul {
 
 .social-icons {
     display: flex;
-    gap: 24px;
+    gap: 20px;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 40px;
 }
 
 .social-icon {
-    width: 60px;
-    height: 60px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     background: var(--bg-card);
     border: 1px solid var(--glass-border);
     color: var(--text-secondary);
     transition: all 0.4s ease;
     cursor: pointer;
+    position: relative;
 }
 
 .social-icon:hover {
@@ -1268,6 +1266,17 @@ ul {
         gap: 24px;
     }
 
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
     .social-icons {
         gap: 16px;
     }
@@ -1338,6 +1347,111 @@ ul {
 }
 
 /* ============================================================
+   EDUCATION
+   ============================================================ */
+#education {
+    padding: var(--section-padding);
+    background: var(--bg-secondary);
+    position: relative;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.education-card {
+    display: flex;
+    gap: 24px;
+    padding: 32px;
+    transition: all var(--transition);
+}
+
+.education-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 212, 255, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 212, 255, 0.08);
+}
+
+.education-icon {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--gradient-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+}
+
+.education-info {
+    flex: 1;
+}
+
+.education-date {
+    display: inline-block;
+    padding: 4px 16px;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    background: rgba(0, 212, 255, 0.1);
+    color: var(--accent-1);
+    margin-bottom: 12px;
+}
+
+.education-info h3 {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.education-info h4 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--accent-1);
+    margin-bottom: 12px;
+}
+
+.education-info p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.education-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.education-tags span {
+    padding: 3px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background: rgba(123, 47, 247, 0.1);
+    color: var(--accent-2);
+    border: 1px solid rgba(123, 47, 247, 0.15);
+}
+
+/* ============================================================
+   THEME TRANSITION
+   ============================================================ */
+body.theme-transitioning,
+body.theme-transitioning * {
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease !important;
+}
+
+/* ============================================================
    LIGHT MODE THEME
    ============================================================ */
 [data-theme="light"] {
@@ -1378,6 +1492,10 @@ ul {
 
 [data-theme="light"] .timeline-dot {
     border-color: var(--bg-primary);
+}
+
+[data-theme="light"] .education-icon {
+    box-shadow: 0 0 20px rgba(0, 119, 204, 0.3);
 }
 
 [data-theme="light"] .social-icon[data-color="#f0f0f0"]:hover {

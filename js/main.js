@@ -18,9 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* ---- Vanta.js NET background ---- */
     let vantaEffect = null;
-    if (typeof VANTA !== 'undefined') {
+
+    function initVanta(isLight) {
+        if (typeof VANTA === 'undefined') return;
         try {
-            const isLightTheme = localStorage.getItem('portfolio_theme') === 'light';
+            if (vantaEffect) {
+                vantaEffect.destroy();
+                vantaEffect = null;
+            }
             vantaEffect = VANTA.NET({
                 el: '#vanta-bg',
                 mouseControls: true,
@@ -30,8 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 minWidth: 200.0,
                 scale: 1.0,
                 scaleMobile: 1.0,
-                color: isLightTheme ? 0x0077cc : 0x00d4ff,
-                backgroundColor: isLightTheme ? 0xf5f7fa : 0x0a0a0f,
+                color: isLight ? 0x0077cc : 0x00d4ff,
+                backgroundColor: isLight ? 0xf5f7fa : 0x0a0a0f,
                 points: 10.0,
                 maxDistance: 22.0,
                 spacing: 18.0,
@@ -41,6 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Vanta failed (e.g. no WebGL) — CSS gradient fallback is already in place
         }
     }
+
+    initVanta(localStorage.getItem('portfolio_theme') === 'light');
 
     /* ---- Typed.js ---- */
     if (typeof Typed !== 'undefined') {
@@ -179,6 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: 0.5,
             stagger: 0.1,
             ease: 'back.out(1.7)',
+            clearProps: 'all',
             scrollTrigger: {
                 trigger: '.social-icons',
                 start: 'top 85%',
@@ -302,16 +310,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const rect = icon.getBoundingClientRect();
             const x = e.clientX - rect.left - rect.width / 2;
             const y = e.clientY - rect.top - rect.height / 2;
-            icon.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px) scale(1.1)`;
+            icon.style.transition = 'transform 0.1s ease';
+            icon.style.transform = `translate(${x * 0.25}px, ${y * 0.25}px) scale(1.1)`;
         });
 
         icon.addEventListener('mouseleave', () => {
-            icon.style.transform = 'translate(0, 0) scale(1)';
             icon.style.transition = 'transform 0.4s ease';
-        });
-
-        icon.addEventListener('mouseenter', () => {
-            icon.style.transition = 'transform 0.1s ease';
+            icon.style.transform = '';
         });
     });
 
@@ -336,46 +341,32 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileThemeIcon = document.getElementById('mobileThemeIcon');
     const savedTheme = localStorage.getItem('portfolio_theme');
 
-    function updateThemeIcons(isLight) {
+    function applyTheme(isLight) {
+        if (isLight) {
+            document.documentElement.setAttribute('data-theme', 'light');
+            document.body.setAttribute('data-theme', 'light');
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+            document.body.removeAttribute('data-theme');
+        }
         [themeIcon, mobileThemeIcon].forEach((icon) => {
             if (!icon) return;
-            if (isLight) {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-            } else {
-                icon.classList.remove('fa-sun');
-                icon.classList.add('fa-moon');
-            }
+            icon.classList.remove('fa-sun', 'fa-moon');
+            icon.classList.add(isLight ? 'fa-sun' : 'fa-moon');
         });
     }
 
     // Apply saved theme on load
     if (savedTheme === 'light') {
-        document.documentElement.setAttribute('data-theme', 'light');
-        updateThemeIcons(true);
+        applyTheme(true);
     }
 
     function toggleTheme() {
-        const isLight = document.documentElement.getAttribute('data-theme') === 'light';
-        if (isLight) {
-            document.documentElement.removeAttribute('data-theme');
-            localStorage.setItem('portfolio_theme', 'dark');
-            updateThemeIcons(false);
-            try {
-                if (vantaEffect) {
-                    vantaEffect.setOptions({ backgroundColor: 0x0a0a0f, color: 0x00d4ff });
-                }
-            } catch (e) { /* ignore */ }
-        } else {
-            document.documentElement.setAttribute('data-theme', 'light');
-            localStorage.setItem('portfolio_theme', 'light');
-            updateThemeIcons(true);
-            try {
-                if (vantaEffect) {
-                    vantaEffect.setOptions({ backgroundColor: 0xf5f7fa, color: 0x0077cc });
-                }
-            } catch (e) { /* ignore */ }
-        }
+        const currentlyLight = document.documentElement.getAttribute('data-theme') === 'light';
+        const goLight = !currentlyLight;
+        localStorage.setItem('portfolio_theme', goLight ? 'light' : 'dark');
+        applyTheme(goLight);
+        initVanta(goLight);
     }
 
     if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
