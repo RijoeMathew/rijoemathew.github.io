@@ -44,6 +44,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: var(--nav-height);
+    overflow-x: hidden;
 }
 
 body {
@@ -54,6 +55,7 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -378,6 +380,14 @@ ul {
     transition-delay: 0.35s;
 }
 
+.mobile-menu.active li:nth-child(7) .mobile-link {
+    transition-delay: 0.4s;
+}
+
+.mobile-menu.active li:nth-child(8) .mobile-link {
+    transition-delay: 0.45s;
+}
+
 .mobile-link:hover {
     color: var(--accent-1);
 }
@@ -659,7 +669,7 @@ ul {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
     gap: 28px;
 }
 
@@ -754,7 +764,7 @@ ul {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 30px;
 }
 
@@ -1222,13 +1232,28 @@ ul {
         display: flex;
     }
 
+    .mobile-link {
+        font-size: 1.5rem;
+        padding: 12px 0;
+    }
+
     .hero-name {
-        font-size: clamp(2rem, 8vw, 3.5rem);
+        font-size: clamp(1.8rem, 8vw, 3.5rem);
+    }
+
+    .hero-subtitle {
+        font-size: clamp(1rem, 4vw, 1.5rem);
     }
 
     .hero-btns {
         flex-direction: column;
         align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
     }
 
     .about-grid {
@@ -1262,6 +1287,15 @@ ul {
         padding: 24px 16px 20px;
     }
 
+    .skill-ring-container {
+        width: 90px;
+        height: 90px;
+    }
+
+    .skill-icon-center {
+        font-size: 1.8rem;
+    }
+
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 24px;
@@ -1276,30 +1310,128 @@ ul {
         align-items: center;
         text-align: center;
         gap: 16px;
+        padding: 24px 20px;
+    }
+
+    .timeline-content {
+        padding: 22px 18px;
     }
 
     .social-icons {
-        gap: 16px;
+        gap: 14px;
     }
 
     .social-icon {
-        width: 52px;
-        height: 52px;
-        font-size: 1.2rem;
+        width: 48px;
+        height: 48px;
+        font-size: 1.15rem;
+    }
+
+    .section-title {
+        font-size: clamp(1.6rem, 5vw, 2.2rem);
     }
 
     .section-line {
         margin-bottom: 40px;
     }
+
+    .contact-desc {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
+    :root {
+        --section-padding: 60px 0;
+    }
+
+    .container {
+        width: 92%;
+    }
+
     .skills-grid {
         grid-template-columns: 1fr;
     }
 
     .stats-grid {
         grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .stat-card {
+        padding: 18px 10px;
+    }
+
+    .stat-number {
+        font-size: 1.6rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+    }
+
+    .image-wrapper {
+        width: 180px;
+        height: 180px;
+    }
+
+    .hero-greeting {
+        font-size: 0.9rem;
+    }
+
+    .hero-desc {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .scroll-indicator {
+        margin-top: 30px;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.05rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.85rem;
+    }
+
+    .education-info h3 {
+        font-size: 1.05rem;
+    }
+
+    .education-info p {
+        font-size: 0.85rem;
+    }
+
+    .project-info h3 {
+        font-size: 1.05rem;
+    }
+
+    .project-info p {
+        font-size: 0.85rem;
+    }
+
+    .mobile-link {
+        font-size: 1.3rem;
+        padding: 10px 0;
+    }
+
+    .footer-inner p {
+        font-size: 0.85rem;
     }
 }
 
@@ -1358,7 +1490,7 @@ ul {
 
 .education-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
     gap: 30px;
     max-width: 900px;
     margin: 0 auto;

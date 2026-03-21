@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ---- Vanta.js NET background ---- */
     let vantaEffect = null;
 
+    const isMobile = window.matchMedia('(max-width: 768px)').matches || 'ontouchstart' in window;
+
     function initVanta(isLight) {
         if (typeof VANTA === 'undefined') return;
         try {
@@ -28,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             vantaEffect = VANTA.NET({
                 el: '#vanta-bg',
-                mouseControls: true,
+                mouseControls: !isMobile,
                 touchControls: true,
                 gyroControls: false,
                 minHeight: 200.0,
@@ -37,9 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 scaleMobile: 1.0,
                 color: isLight ? 0x93c5fd : 0x00d4ff,
                 backgroundColor: isLight ? 0xf0f4f8 : 0x0a0a0f,
-                points: isLight ? 8.0 : 10.0,
-                maxDistance: isLight ? 20.0 : 22.0,
-                spacing: 18.0,
+                points: isMobile ? 6.0 : (isLight ? 8.0 : 10.0),
+                maxDistance: isMobile ? 18.0 : (isLight ? 20.0 : 22.0),
+                spacing: isMobile ? 20.0 : 18.0,
                 showDots: true,
             });
         } catch (e) {
@@ -68,8 +70,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    /* ---- Vanilla Tilt on skill cards ---- */
-    if (typeof VanillaTilt !== 'undefined') {
+    /* ---- Vanilla Tilt on skill cards (skip on touch devices) ---- */
+    if (typeof VanillaTilt !== 'undefined' && !isMobile) {
         const tiltCards = document.querySelectorAll('.tilt-card');
         if (tiltCards.length) {
             VanillaTilt.init(Array.from(tiltCards), {
@@ -317,37 +319,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    /* ---- Magnetic Hover on Social Icons ---- */
-    const magneticIcons = document.querySelectorAll('.magnetic');
+    /* ---- Magnetic Hover on Social Icons (skip on touch) ---- */
+    if (!isMobile) {
+        const magneticIcons = document.querySelectorAll('.magnetic');
+        magneticIcons.forEach((icon) => {
+            icon.addEventListener('mousemove', (e) => {
+                const rect = icon.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                icon.style.transition = 'transform 0.1s ease';
+                icon.style.transform = `translate(${x * 0.25}px, ${y * 0.25}px) scale(1.1)`;
+            });
 
-    magneticIcons.forEach((icon) => {
-        icon.addEventListener('mousemove', (e) => {
-            const rect = icon.getBoundingClientRect();
-            const x = e.clientX - rect.left - rect.width / 2;
-            const y = e.clientY - rect.top - rect.height / 2;
-            icon.style.transition = 'transform 0.1s ease';
-            icon.style.transform = `translate(${x * 0.25}px, ${y * 0.25}px) scale(1.1)`;
+            icon.addEventListener('mouseleave', () => {
+                icon.style.transition = 'transform 0.4s ease';
+                icon.style.transform = '';
+            });
         });
-
-        icon.addEventListener('mouseleave', () => {
-            icon.style.transition = 'transform 0.4s ease';
-            icon.style.transform = '';
-        });
-    });
+    }
 
     /* ---- Parallax on scroll for subtle depth ---- */
-    window.addEventListener(
-        'scroll',
-        () => {
-            const scrolled = window.scrollY;
-            const heroContent = document.querySelector('.hero-content');
-            if (heroContent && scrolled < window.innerHeight) {
-                heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
-                heroContent.style.opacity = 1 - scrolled / window.innerHeight;
-            }
-        },
-        { passive: true }
-    );
+    if (!isMobile) {
+        window.addEventListener(
+            'scroll',
+            () => {
+                const scrolled = window.scrollY;
+                const heroContent = document.querySelector('.hero-content');
+                if (heroContent && scrolled < window.innerHeight) {
+                    heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
+                    heroContent.style.opacity = 1 - scrolled / window.innerHeight;
+                }
+            },
+            { passive: true }
+        );
+    }
 
     /* ---- Dark / Light Theme Toggle ---- */
     const themeToggle = document.getElementById('themeToggle');
