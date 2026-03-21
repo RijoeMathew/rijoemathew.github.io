@@ -198,6 +198,20 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ---- SVG Gradient Definition (injected for skill rings) ---- */
     const svgNS = 'http://www.w3.org/2000/svg';
     const skillRings = document.querySelectorAll('.skill-ring');
+
+    function updateRingGradients() {
+        const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+        const color1 = isLight ? '#0284c7' : '#00d4ff';
+        const color2 = isLight ? '#6366f1' : '#7b2ff7';
+        skillRings.forEach((svg) => {
+            const stops = svg.querySelectorAll('#ringGradient stop');
+            if (stops.length === 2) {
+                stops[0].setAttribute('stop-color', color1);
+                stops[1].setAttribute('stop-color', color2);
+            }
+        });
+    }
+
     skillRings.forEach((svg) => {
         const defs = document.createElementNS(svgNS, 'defs');
         const grad = document.createElementNS(svgNS, 'linearGradient');
@@ -207,13 +221,14 @@ document.addEventListener('DOMContentLoaded', () => {
         grad.setAttribute('x2', '100%');
         grad.setAttribute('y2', '100%');
 
+        const isLight = document.documentElement.getAttribute('data-theme') === 'light';
         const stop1 = document.createElementNS(svgNS, 'stop');
         stop1.setAttribute('offset', '0%');
-        stop1.setAttribute('stop-color', '#00d4ff');
+        stop1.setAttribute('stop-color', isLight ? '#0284c7' : '#00d4ff');
 
         const stop2 = document.createElementNS(svgNS, 'stop');
         stop2.setAttribute('offset', '100%');
-        stop2.setAttribute('stop-color', '#7b2ff7');
+        stop2.setAttribute('stop-color', isLight ? '#6366f1' : '#7b2ff7');
 
         grad.appendChild(stop1);
         grad.appendChild(stop2);
@@ -367,6 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('portfolio_theme', goLight ? 'light' : 'dark');
         applyTheme(goLight);
         initVanta(goLight);
+        updateRingGradients();
     }
 
     if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
