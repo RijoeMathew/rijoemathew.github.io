@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ---- Vanta.js NET background ---- */
     if (typeof VANTA !== 'undefined') {
         try {
+            const isLightTheme = localStorage.getItem('portfolio_theme') === 'light';
             VANTA.NET({
                 el: '#vanta-bg',
                 mouseControls: true,
@@ -28,8 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 minWidth: 200.0,
                 scale: 1.0,
                 scaleMobile: 1.0,
-                color: 0x00d4ff,
-                backgroundColor: 0x0a0a0f,
+                color: isLightTheme ? 0x0077cc : 0x00d4ff,
+                backgroundColor: isLightTheme ? 0xf5f7fa : 0x0a0a0f,
                 points: 10.0,
                 maxDistance: 22.0,
                 spacing: 18.0,
@@ -44,11 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof Typed !== 'undefined') {
         new Typed('#typed', {
             strings: [
-                'Technology Analyst',
-                'Python Developer',
+                'Software Engineer',
+                'Python & Django Developer',
+                'Full Stack Developer',
                 'Database Specialist',
-                'SQL Expert',
-                'Web Developer',
+                'Cloud Enthusiast',
                 'Problem Solver',
             ],
             typeSpeed: 60,
@@ -326,4 +327,58 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         { passive: true }
     );
+
+    /* ---- Dark / Light Theme Toggle ---- */
+    const themeToggle = document.getElementById('themeToggle');
+    const mobileThemeToggle = document.getElementById('mobileThemeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const mobileThemeIcon = document.getElementById('mobileThemeIcon');
+    const savedTheme = localStorage.getItem('portfolio_theme');
+
+    function updateThemeIcons(isLight) {
+        [themeIcon, mobileThemeIcon].forEach((icon) => {
+            if (!icon) return;
+            if (isLight) {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            } else {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            }
+        });
+    }
+
+    // Apply saved theme on load
+    if (savedTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        updateThemeIcons(true);
+    }
+
+    function toggleTheme() {
+        const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+        if (isLight) {
+            document.documentElement.removeAttribute('data-theme');
+            localStorage.setItem('portfolio_theme', 'dark');
+            updateThemeIcons(false);
+            try {
+                const vantaEl = document.getElementById('vanta-bg');
+                if (vantaEl && vantaEl.__vantaEffect) {
+                    vantaEl.__vantaEffect.setOptions({ backgroundColor: 0x0a0a0f, color: 0x00d4ff });
+                }
+            } catch (e) { /* ignore */ }
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('portfolio_theme', 'light');
+            updateThemeIcons(true);
+            try {
+                const vantaEl = document.getElementById('vanta-bg');
+                if (vantaEl && vantaEl.__vantaEffect) {
+                    vantaEl.__vantaEffect.setOptions({ backgroundColor: 0xf5f7fa, color: 0x0077cc });
+                }
+            } catch (e) { /* ignore */ }
+        }
+    }
+
+    if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+    if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
 });
