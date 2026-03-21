@@ -17,10 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* ---- Vanta.js NET background ---- */
+    let vantaEffect = null;
     if (typeof VANTA !== 'undefined') {
         try {
             const isLightTheme = localStorage.getItem('portfolio_theme') === 'light';
-            VANTA.NET({
+            vantaEffect = VANTA.NET({
                 el: '#vanta-bg',
                 mouseControls: true,
                 touchControls: true,
@@ -339,11 +340,11 @@ document.addEventListener('DOMContentLoaded', () => {
         [themeIcon, mobileThemeIcon].forEach((icon) => {
             if (!icon) return;
             if (isLight) {
-                icon.classList.remove('fa-sun');
-                icon.classList.add('fa-moon');
-            } else {
                 icon.classList.remove('fa-moon');
                 icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
             }
         });
     }
@@ -361,9 +362,8 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('portfolio_theme', 'dark');
             updateThemeIcons(false);
             try {
-                const vantaEl = document.getElementById('vanta-bg');
-                if (vantaEl && vantaEl.__vantaEffect) {
-                    vantaEl.__vantaEffect.setOptions({ backgroundColor: 0x0a0a0f, color: 0x00d4ff });
+                if (vantaEffect) {
+                    vantaEffect.setOptions({ backgroundColor: 0x0a0a0f, color: 0x00d4ff });
                 }
             } catch (e) { /* ignore */ }
         } else {
@@ -371,9 +371,8 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('portfolio_theme', 'light');
             updateThemeIcons(true);
             try {
-                const vantaEl = document.getElementById('vanta-bg');
-                if (vantaEl && vantaEl.__vantaEffect) {
-                    vantaEl.__vantaEffect.setOptions({ backgroundColor: 0xf5f7fa, color: 0x0077cc });
+                if (vantaEffect) {
+                    vantaEffect.setOptions({ backgroundColor: 0xf5f7fa, color: 0x0077cc });
                 }
             } catch (e) { /* ignore */ }
         }
