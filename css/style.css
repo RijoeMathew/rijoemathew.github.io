@@ -890,6 +890,28 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    margin-bottom: 20px;
+}
+
+.project-text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-1);
+    transition: all var(--transition);
+    opacity: 0.9;
+}
+
+.project-text-link:hover {
+    color: var(--accent-2);
+    transform: translateX(5px);
+    opacity: 1;
+}
+
+.project-text-link i {
+    font-size: 0.75rem;
 }
 
 .project-tags span {

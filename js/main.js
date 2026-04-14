@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             strings: [
                 'Full Stack Developer',
                 'Database Specialist',
-                'Python &amp; Django Developer',
+                'Python & Django Developer',
                 'Software Engineer',
                 'Cloud Enthusiast',
                 'Problem Solver',
@@ -149,7 +149,8 @@ document.addEventListener('DOMContentLoaded', () => {
             );
         });
 
-        /* Project cards stagger */
+        /* Project cards stagger - Disabled temporarily to fix invisibility issue */
+        /*
         gsap.utils.toArray('.project-card').forEach((card, i) => {
             gsap.from(card, {
                 y: 60,
@@ -164,6 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
             });
         });
+        */
 
         /* Timeline items */
         gsap.utils.toArray('.timeline-item').forEach((item) => {
