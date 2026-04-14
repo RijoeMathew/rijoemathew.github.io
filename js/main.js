@@ -55,18 +55,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof Typed !== 'undefined') {
         new Typed('#typed', {
             strings: [
-                'Software Engineer',
-                'Python & Django Developer',
                 'Full Stack Developer',
                 'Database Specialist',
+                'Python &amp; Django Developer',
+                'Software Engineer',
                 'Cloud Enthusiast',
                 'Problem Solver',
             ],
             typeSpeed: 60,
             backSpeed: 40,
-            backDelay: 2000,
+            backDelay: 1500,
             loop: true,
-            smartBackspace: true,
+            smartBackspace: false,
         });
     }
 
