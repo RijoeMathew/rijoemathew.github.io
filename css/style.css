@@ -1389,6 +1389,16 @@ ul {
         height: 44px;
         font-size: 1rem;
     }
+
+    /* Hide scrollbar for mobile */
+    html::-webkit-scrollbar {
+        display: none;
+    }
+
+    html {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
 }
 
 @media (max-width: 480px) {
